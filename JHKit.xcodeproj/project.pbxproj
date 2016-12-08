@@ -10,6 +10,96 @@
 		BE62D5D41DF8DAFD004510A5 /* JHKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE62D5CA1DF8DAFD004510A5 /* JHKit.framework */; };
 		BE62D5D91DF8DAFD004510A5 /* JHKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D5D81DF8DAFD004510A5 /* JHKitTests.m */; };
 		BE62D5DB1DF8DAFD004510A5 /* JHKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D5CD1DF8DAFD004510A5 /* JHKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE62D6481DF8DD78004510A5 /* JHKit-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = BE62D5E41DF8DD78004510A5 /* JHKit-Prefix.pch */; };
+		BE62D6491DF8DD78004510A5 /* JHNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D5E71DF8DD78004510A5 /* JHNavigationController.h */; };
+		BE62D64A1DF8DD78004510A5 /* JHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D5E81DF8DD78004510A5 /* JHNavigationController.m */; };
+		BE62D64B1DF8DD78004510A5 /* JHObject.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D5E91DF8DD78004510A5 /* JHObject.h */; };
+		BE62D64C1DF8DD78004510A5 /* JHObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D5EA1DF8DD78004510A5 /* JHObject.m */; };
+		BE62D64D1DF8DD78004510A5 /* JHRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D5EB1DF8DD78004510A5 /* JHRequest.h */; };
+		BE62D64E1DF8DD78004510A5 /* JHRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D5EC1DF8DD78004510A5 /* JHRequest.m */; };
+		BE62D64F1DF8DD78004510A5 /* JHResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D5ED1DF8DD78004510A5 /* JHResponse.h */; };
+		BE62D6501DF8DD78004510A5 /* JHResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D5EE1DF8DD78004510A5 /* JHResponse.m */; };
+		BE62D6511DF8DD78004510A5 /* JHViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D5EF1DF8DD78004510A5 /* JHViewController.h */; };
+		BE62D6521DF8DD78004510A5 /* JHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D5F01DF8DD78004510A5 /* JHViewController.m */; };
+		BE62D6531DF8DD78004510A5 /* JHBases.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D5F11DF8DD78004510A5 /* JHBases.h */; };
+		BE62D6541DF8DD78004510A5 /* JHWidgets.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D5F21DF8DD78004510A5 /* JHWidgets.h */; };
+		BE62D6551DF8DD78004510A5 /* JHAddressBookReader.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D5F41DF8DD78004510A5 /* JHAddressBookReader.h */; };
+		BE62D6561DF8DD78004510A5 /* JHAddressBookReader.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D5F51DF8DD78004510A5 /* JHAddressBookReader.m */; };
+		BE62D6571DF8DD78004510A5 /* JHContact.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D5F61DF8DD78004510A5 /* JHContact.h */; };
+		BE62D6581DF8DD78004510A5 /* JHContact.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D5F71DF8DD78004510A5 /* JHContact.m */; };
+		BE62D6591DF8DD78004510A5 /* JHLocalSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D5F81DF8DD78004510A5 /* JHLocalSettings.h */; };
+		BE62D65A1DF8DD78004510A5 /* JHLocalSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D5F91DF8DD78004510A5 /* JHLocalSettings.m */; };
+		BE62D65B1DF8DD78004510A5 /* JHNetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D5FA1DF8DD78004510A5 /* JHNetworkManager.h */; };
+		BE62D65C1DF8DD78004510A5 /* JHNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D5FB1DF8DD78004510A5 /* JHNetworkManager.m */; };
+		BE62D65D1DF8DD78004510A5 /* JHActionSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D5FD1DF8DD78004510A5 /* JHActionSheet.h */; };
+		BE62D65E1DF8DD78004510A5 /* JHActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D5FE1DF8DD78004510A5 /* JHActionSheet.m */; };
+		BE62D65F1DF8DD78004510A5 /* JHAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D5FF1DF8DD78004510A5 /* JHAlert.h */; };
+		BE62D6601DF8DD78004510A5 /* JHAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D6001DF8DD78004510A5 /* JHAlert.m */; };
+		BE62D6611DF8DD78004510A5 /* JHBadgeView.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D6011DF8DD78004510A5 /* JHBadgeView.h */; };
+		BE62D6621DF8DD78004510A5 /* JHBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D6021DF8DD78004510A5 /* JHBadgeView.m */; };
+		BE62D6631DF8DD78004510A5 /* JHButton.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D6031DF8DD78004510A5 /* JHButton.h */; };
+		BE62D6641DF8DD78004510A5 /* JHButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D6041DF8DD78004510A5 /* JHButton.m */; };
+		BE62D6651DF8DD78004510A5 /* JHCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D6051DF8DD78004510A5 /* JHCollectionView.h */; };
+		BE62D6661DF8DD78004510A5 /* JHCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D6061DF8DD78004510A5 /* JHCollectionView.m */; };
+		BE62D6671DF8DD78004510A5 /* JHCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D6071DF8DD78004510A5 /* JHCollectionViewCell.h */; };
+		BE62D6681DF8DD78004510A5 /* JHCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D6081DF8DD78004510A5 /* JHCollectionViewCell.m */; };
+		BE62D6691DF8DD78004510A5 /* JHImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D6091DF8DD78004510A5 /* JHImageView.h */; };
+		BE62D66A1DF8DD78004510A5 /* JHImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D60A1DF8DD78004510A5 /* JHImageView.m */; };
+		BE62D66B1DF8DD78004510A5 /* JHLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D60B1DF8DD78004510A5 /* JHLabel.h */; };
+		BE62D66C1DF8DD78004510A5 /* JHLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D60C1DF8DD78004510A5 /* JHLabel.m */; };
+		BE62D66D1DF8DD78004510A5 /* JHPopoverView.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D60D1DF8DD78004510A5 /* JHPopoverView.h */; };
+		BE62D66E1DF8DD78004510A5 /* JHPopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D60E1DF8DD78004510A5 /* JHPopoverView.m */; };
+		BE62D66F1DF8DD78004510A5 /* JHShakingView.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D60F1DF8DD78004510A5 /* JHShakingView.h */; };
+		BE62D6701DF8DD78004510A5 /* JHShakingView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D6101DF8DD78004510A5 /* JHShakingView.m */; };
+		BE62D6711DF8DD78004510A5 /* JHTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D6111DF8DD78004510A5 /* JHTableView.h */; };
+		BE62D6721DF8DD78004510A5 /* JHTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D6121DF8DD78004510A5 /* JHTableView.m */; };
+		BE62D6731DF8DD78004510A5 /* JHTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D6131DF8DD78004510A5 /* JHTableViewCell.h */; };
+		BE62D6741DF8DD78004510A5 /* JHTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D6141DF8DD78004510A5 /* JHTableViewCell.m */; };
+		BE62D6751DF8DD78004510A5 /* JHTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D6151DF8DD78004510A5 /* JHTextField.h */; };
+		BE62D6761DF8DD78004510A5 /* JHTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D6161DF8DD78004510A5 /* JHTextField.m */; };
+		BE62D6771DF8DD78004510A5 /* JHTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D6171DF8DD78004510A5 /* JHTextView.h */; };
+		BE62D6781DF8DD78004510A5 /* JHTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D6181DF8DD78004510A5 /* JHTextView.m */; };
+		BE62D6791DF8DD78004510A5 /* JHView.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D6191DF8DD78004510A5 /* JHView.h */; };
+		BE62D67A1DF8DD78004510A5 /* JHView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D61A1DF8DD78004510A5 /* JHView.m */; };
+		BE62D67B1DF8DD78004510A5 /* JHCategorys.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D61C1DF8DD78004510A5 /* JHCategorys.h */; };
+		BE62D67C1DF8DD78004510A5 /* NSArray+JHKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D61E1DF8DD78004510A5 /* NSArray+JHKit.h */; };
+		BE62D67D1DF8DD78004510A5 /* NSArray+JHKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D61F1DF8DD78004510A5 /* NSArray+JHKit.m */; };
+		BE62D67E1DF8DD78004510A5 /* NSData+JHKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D6201DF8DD78004510A5 /* NSData+JHKit.h */; };
+		BE62D67F1DF8DD78004510A5 /* NSData+JHKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D6211DF8DD78004510A5 /* NSData+JHKit.m */; };
+		BE62D6801DF8DD78004510A5 /* NSDate+JHKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D6221DF8DD78004510A5 /* NSDate+JHKit.h */; };
+		BE62D6811DF8DD78004510A5 /* NSDate+JHKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D6231DF8DD78004510A5 /* NSDate+JHKit.m */; };
+		BE62D6821DF8DD78004510A5 /* NSObject+JHKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D6241DF8DD78004510A5 /* NSObject+JHKit.h */; };
+		BE62D6831DF8DD78004510A5 /* NSObject+JHKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D6251DF8DD78004510A5 /* NSObject+JHKit.m */; };
+		BE62D6841DF8DD78004510A5 /* NSString+JHKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D6261DF8DD78004510A5 /* NSString+JHKit.h */; };
+		BE62D6851DF8DD78004510A5 /* NSString+JHKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D6271DF8DD78004510A5 /* NSString+JHKit.m */; };
+		BE62D6861DF8DD78004510A5 /* UIColor+JHKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D6291DF8DD78004510A5 /* UIColor+JHKit.h */; };
+		BE62D6871DF8DD78004510A5 /* UIColor+JHKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D62A1DF8DD78004510A5 /* UIColor+JHKit.m */; };
+		BE62D6881DF8DD78004510A5 /* UIImage+JHKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D62B1DF8DD78004510A5 /* UIImage+JHKit.h */; };
+		BE62D6891DF8DD78004510A5 /* UIImage+JHKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D62C1DF8DD78004510A5 /* UIImage+JHKit.m */; };
+		BE62D68A1DF8DD78004510A5 /* UIImageView+JHKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D62D1DF8DD78004510A5 /* UIImageView+JHKit.h */; };
+		BE62D68B1DF8DD78004510A5 /* UIImageView+JHKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D62E1DF8DD78004510A5 /* UIImageView+JHKit.m */; };
+		BE62D68C1DF8DD78004510A5 /* UIScrollView+JHKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D62F1DF8DD78004510A5 /* UIScrollView+JHKit.h */; };
+		BE62D68D1DF8DD78004510A5 /* UIScrollView+JHKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D6301DF8DD78004510A5 /* UIScrollView+JHKit.m */; };
+		BE62D68E1DF8DD78004510A5 /* UIView+JHKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D6311DF8DD78004510A5 /* UIView+JHKit.h */; };
+		BE62D68F1DF8DD78004510A5 /* UIView+JHKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D6321DF8DD78004510A5 /* UIView+JHKit.m */; };
+		BE62D6901DF8DD78004510A5 /* UIViewController+JHKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D6331DF8DD78004510A5 /* UIViewController+JHKit.h */; };
+		BE62D6911DF8DD78004510A5 /* UIViewController+JHKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D6341DF8DD78004510A5 /* UIViewController+JHKit.m */; };
+		BE62D6921DF8DD78004510A5 /* JHConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D6371DF8DD78004510A5 /* JHConstants.h */; };
+		BE62D6931DF8DD78004510A5 /* JHConstants_AppInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D6381DF8DD78004510A5 /* JHConstants_AppInfo.h */; };
+		BE62D6941DF8DD78004510A5 /* JHConstants_Color.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D6391DF8DD78004510A5 /* JHConstants_Color.h */; };
+		BE62D6951DF8DD78004510A5 /* JHConstants_Device.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D63A1DF8DD78004510A5 /* JHConstants_Device.h */; };
+		BE62D6961DF8DD78004510A5 /* JHConstants_Font.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D63B1DF8DD78004510A5 /* JHConstants_Font.h */; };
+		BE62D6971DF8DD78004510A5 /* JHConstants_Localize.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D63C1DF8DD78004510A5 /* JHConstants_Localize.h */; };
+		BE62D6981DF8DD78004510A5 /* JHConstants_Log.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D63D1DF8DD78004510A5 /* JHConstants_Log.h */; };
+		BE62D6991DF8DD78004510A5 /* JHConstants_Math.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D63E1DF8DD78004510A5 /* JHConstants_Math.h */; };
+		BE62D69A1DF8DD78004510A5 /* JHConstants_Notification.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D63F1DF8DD78004510A5 /* JHConstants_Notification.h */; };
+		BE62D69B1DF8DD78004510A5 /* JHConstants_OpenUrl.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D6401DF8DD78004510A5 /* JHConstants_OpenUrl.h */; };
+		BE62D69C1DF8DD78004510A5 /* JHConstants_Version.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D6411DF8DD78004510A5 /* JHConstants_Version.h */; };
+		BE62D69D1DF8DD78004510A5 /* JHMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D6421DF8DD78004510A5 /* JHMacro.h */; };
+		BE62D69E1DF8DD78004510A5 /* JHClassType.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D6441DF8DD78004510A5 /* JHClassType.h */; };
+		BE62D69F1DF8DD78004510A5 /* JHDataType.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D6451DF8DD78004510A5 /* JHDataType.h */; };
+		BE62D6A01DF8DD78004510A5 /* JHEnumType.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D6461DF8DD78004510A5 /* JHEnumType.h */; };
+		BE62D6A11DF8DD78004510A5 /* JHStructType.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D6471DF8DD78004510A5 /* JHStructType.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +119,96 @@
 		BE62D5D31DF8DAFD004510A5 /* JHKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JHKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE62D5D81DF8DAFD004510A5 /* JHKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHKitTests.m; sourceTree = "<group>"; };
 		BE62D5DA1DF8DAFD004510A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE62D5E41DF8DD78004510A5 /* JHKit-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JHKit-Prefix.pch"; sourceTree = "<group>"; };
+		BE62D5E71DF8DD78004510A5 /* JHNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHNavigationController.h; sourceTree = "<group>"; };
+		BE62D5E81DF8DD78004510A5 /* JHNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHNavigationController.m; sourceTree = "<group>"; };
+		BE62D5E91DF8DD78004510A5 /* JHObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHObject.h; sourceTree = "<group>"; };
+		BE62D5EA1DF8DD78004510A5 /* JHObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHObject.m; sourceTree = "<group>"; };
+		BE62D5EB1DF8DD78004510A5 /* JHRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHRequest.h; sourceTree = "<group>"; };
+		BE62D5EC1DF8DD78004510A5 /* JHRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHRequest.m; sourceTree = "<group>"; };
+		BE62D5ED1DF8DD78004510A5 /* JHResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHResponse.h; sourceTree = "<group>"; };
+		BE62D5EE1DF8DD78004510A5 /* JHResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHResponse.m; sourceTree = "<group>"; };
+		BE62D5EF1DF8DD78004510A5 /* JHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHViewController.h; sourceTree = "<group>"; };
+		BE62D5F01DF8DD78004510A5 /* JHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHViewController.m; sourceTree = "<group>"; };
+		BE62D5F11DF8DD78004510A5 /* JHBases.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHBases.h; sourceTree = "<group>"; };
+		BE62D5F21DF8DD78004510A5 /* JHWidgets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHWidgets.h; sourceTree = "<group>"; };
+		BE62D5F41DF8DD78004510A5 /* JHAddressBookReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHAddressBookReader.h; sourceTree = "<group>"; };
+		BE62D5F51DF8DD78004510A5 /* JHAddressBookReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHAddressBookReader.m; sourceTree = "<group>"; };
+		BE62D5F61DF8DD78004510A5 /* JHContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHContact.h; sourceTree = "<group>"; };
+		BE62D5F71DF8DD78004510A5 /* JHContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHContact.m; sourceTree = "<group>"; };
+		BE62D5F81DF8DD78004510A5 /* JHLocalSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHLocalSettings.h; sourceTree = "<group>"; };
+		BE62D5F91DF8DD78004510A5 /* JHLocalSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHLocalSettings.m; sourceTree = "<group>"; };
+		BE62D5FA1DF8DD78004510A5 /* JHNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHNetworkManager.h; sourceTree = "<group>"; };
+		BE62D5FB1DF8DD78004510A5 /* JHNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHNetworkManager.m; sourceTree = "<group>"; };
+		BE62D5FD1DF8DD78004510A5 /* JHActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHActionSheet.h; sourceTree = "<group>"; };
+		BE62D5FE1DF8DD78004510A5 /* JHActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHActionSheet.m; sourceTree = "<group>"; };
+		BE62D5FF1DF8DD78004510A5 /* JHAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHAlert.h; sourceTree = "<group>"; };
+		BE62D6001DF8DD78004510A5 /* JHAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHAlert.m; sourceTree = "<group>"; };
+		BE62D6011DF8DD78004510A5 /* JHBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHBadgeView.h; sourceTree = "<group>"; };
+		BE62D6021DF8DD78004510A5 /* JHBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHBadgeView.m; sourceTree = "<group>"; };
+		BE62D6031DF8DD78004510A5 /* JHButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHButton.h; sourceTree = "<group>"; };
+		BE62D6041DF8DD78004510A5 /* JHButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHButton.m; sourceTree = "<group>"; };
+		BE62D6051DF8DD78004510A5 /* JHCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCollectionView.h; sourceTree = "<group>"; };
+		BE62D6061DF8DD78004510A5 /* JHCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHCollectionView.m; sourceTree = "<group>"; };
+		BE62D6071DF8DD78004510A5 /* JHCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCollectionViewCell.h; sourceTree = "<group>"; };
+		BE62D6081DF8DD78004510A5 /* JHCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHCollectionViewCell.m; sourceTree = "<group>"; };
+		BE62D6091DF8DD78004510A5 /* JHImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHImageView.h; sourceTree = "<group>"; };
+		BE62D60A1DF8DD78004510A5 /* JHImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHImageView.m; sourceTree = "<group>"; };
+		BE62D60B1DF8DD78004510A5 /* JHLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHLabel.h; sourceTree = "<group>"; };
+		BE62D60C1DF8DD78004510A5 /* JHLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHLabel.m; sourceTree = "<group>"; };
+		BE62D60D1DF8DD78004510A5 /* JHPopoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHPopoverView.h; sourceTree = "<group>"; };
+		BE62D60E1DF8DD78004510A5 /* JHPopoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHPopoverView.m; sourceTree = "<group>"; };
+		BE62D60F1DF8DD78004510A5 /* JHShakingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHShakingView.h; sourceTree = "<group>"; };
+		BE62D6101DF8DD78004510A5 /* JHShakingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHShakingView.m; sourceTree = "<group>"; };
+		BE62D6111DF8DD78004510A5 /* JHTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTableView.h; sourceTree = "<group>"; };
+		BE62D6121DF8DD78004510A5 /* JHTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTableView.m; sourceTree = "<group>"; };
+		BE62D6131DF8DD78004510A5 /* JHTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTableViewCell.h; sourceTree = "<group>"; };
+		BE62D6141DF8DD78004510A5 /* JHTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTableViewCell.m; sourceTree = "<group>"; };
+		BE62D6151DF8DD78004510A5 /* JHTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTextField.h; sourceTree = "<group>"; };
+		BE62D6161DF8DD78004510A5 /* JHTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTextField.m; sourceTree = "<group>"; };
+		BE62D6171DF8DD78004510A5 /* JHTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTextView.h; sourceTree = "<group>"; };
+		BE62D6181DF8DD78004510A5 /* JHTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTextView.m; sourceTree = "<group>"; };
+		BE62D6191DF8DD78004510A5 /* JHView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHView.h; sourceTree = "<group>"; };
+		BE62D61A1DF8DD78004510A5 /* JHView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHView.m; sourceTree = "<group>"; };
+		BE62D61C1DF8DD78004510A5 /* JHCategorys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCategorys.h; sourceTree = "<group>"; };
+		BE62D61E1DF8DD78004510A5 /* NSArray+JHKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+JHKit.h"; sourceTree = "<group>"; };
+		BE62D61F1DF8DD78004510A5 /* NSArray+JHKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JHKit.m"; sourceTree = "<group>"; };
+		BE62D6201DF8DD78004510A5 /* NSData+JHKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+JHKit.h"; sourceTree = "<group>"; };
+		BE62D6211DF8DD78004510A5 /* NSData+JHKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+JHKit.m"; sourceTree = "<group>"; };
+		BE62D6221DF8DD78004510A5 /* NSDate+JHKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+JHKit.h"; sourceTree = "<group>"; };
+		BE62D6231DF8DD78004510A5 /* NSDate+JHKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+JHKit.m"; sourceTree = "<group>"; };
+		BE62D6241DF8DD78004510A5 /* NSObject+JHKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JHKit.h"; sourceTree = "<group>"; };
+		BE62D6251DF8DD78004510A5 /* NSObject+JHKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JHKit.m"; sourceTree = "<group>"; };
+		BE62D6261DF8DD78004510A5 /* NSString+JHKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JHKit.h"; sourceTree = "<group>"; };
+		BE62D6271DF8DD78004510A5 /* NSString+JHKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JHKit.m"; sourceTree = "<group>"; };
+		BE62D6291DF8DD78004510A5 /* UIColor+JHKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+JHKit.h"; sourceTree = "<group>"; };
+		BE62D62A1DF8DD78004510A5 /* UIColor+JHKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JHKit.m"; sourceTree = "<group>"; };
+		BE62D62B1DF8DD78004510A5 /* UIImage+JHKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JHKit.h"; sourceTree = "<group>"; };
+		BE62D62C1DF8DD78004510A5 /* UIImage+JHKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JHKit.m"; sourceTree = "<group>"; };
+		BE62D62D1DF8DD78004510A5 /* UIImageView+JHKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+JHKit.h"; sourceTree = "<group>"; };
+		BE62D62E1DF8DD78004510A5 /* UIImageView+JHKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JHKit.m"; sourceTree = "<group>"; };
+		BE62D62F1DF8DD78004510A5 /* UIScrollView+JHKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+JHKit.h"; sourceTree = "<group>"; };
+		BE62D6301DF8DD78004510A5 /* UIScrollView+JHKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+JHKit.m"; sourceTree = "<group>"; };
+		BE62D6311DF8DD78004510A5 /* UIView+JHKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JHKit.h"; sourceTree = "<group>"; };
+		BE62D6321DF8DD78004510A5 /* UIView+JHKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JHKit.m"; sourceTree = "<group>"; };
+		BE62D6331DF8DD78004510A5 /* UIViewController+JHKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JHKit.h"; sourceTree = "<group>"; };
+		BE62D6341DF8DD78004510A5 /* UIViewController+JHKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JHKit.m"; sourceTree = "<group>"; };
+		BE62D6371DF8DD78004510A5 /* JHConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHConstants.h; sourceTree = "<group>"; };
+		BE62D6381DF8DD78004510A5 /* JHConstants_AppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHConstants_AppInfo.h; sourceTree = "<group>"; };
+		BE62D6391DF8DD78004510A5 /* JHConstants_Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHConstants_Color.h; sourceTree = "<group>"; };
+		BE62D63A1DF8DD78004510A5 /* JHConstants_Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHConstants_Device.h; sourceTree = "<group>"; };
+		BE62D63B1DF8DD78004510A5 /* JHConstants_Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHConstants_Font.h; sourceTree = "<group>"; };
+		BE62D63C1DF8DD78004510A5 /* JHConstants_Localize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHConstants_Localize.h; sourceTree = "<group>"; };
+		BE62D63D1DF8DD78004510A5 /* JHConstants_Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHConstants_Log.h; sourceTree = "<group>"; };
+		BE62D63E1DF8DD78004510A5 /* JHConstants_Math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHConstants_Math.h; sourceTree = "<group>"; };
+		BE62D63F1DF8DD78004510A5 /* JHConstants_Notification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHConstants_Notification.h; sourceTree = "<group>"; };
+		BE62D6401DF8DD78004510A5 /* JHConstants_OpenUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHConstants_OpenUrl.h; sourceTree = "<group>"; };
+		BE62D6411DF8DD78004510A5 /* JHConstants_Version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHConstants_Version.h; sourceTree = "<group>"; };
+		BE62D6421DF8DD78004510A5 /* JHMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHMacro.h; sourceTree = "<group>"; };
+		BE62D6441DF8DD78004510A5 /* JHClassType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHClassType.h; sourceTree = "<group>"; };
+		BE62D6451DF8DD78004510A5 /* JHDataType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHDataType.h; sourceTree = "<group>"; };
+		BE62D6461DF8DD78004510A5 /* JHEnumType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHEnumType.h; sourceTree = "<group>"; };
+		BE62D6471DF8DD78004510A5 /* JHStructType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHStructType.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +251,10 @@
 		BE62D5CC1DF8DAFD004510A5 /* JHKit */ = {
 			isa = PBXGroup;
 			children = (
+				BE62D5E41DF8DD78004510A5 /* JHKit-Prefix.pch */,
+				BE62D5E51DF8DD78004510A5 /* Common */,
+				BE62D61B1DF8DD78004510A5 /* Category */,
+				BE62D6351DF8DD78004510A5 /* BaseMacro */,
 				BE62D5CD1DF8DAFD004510A5 /* JHKit.h */,
 				BE62D5CE1DF8DAFD004510A5 /* Info.plist */,
 			);
@@ -86,6 +270,172 @@
 			path = JHKitTests;
 			sourceTree = "<group>";
 		};
+		BE62D5E51DF8DD78004510A5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BE62D5E61DF8DD78004510A5 /* Base */,
+				BE62D5F11DF8DD78004510A5 /* JHBases.h */,
+				BE62D5F21DF8DD78004510A5 /* JHWidgets.h */,
+				BE62D5F31DF8DD78004510A5 /* Manager */,
+				BE62D5FC1DF8DD78004510A5 /* UI */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BE62D5E61DF8DD78004510A5 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BE62D5E71DF8DD78004510A5 /* JHNavigationController.h */,
+				BE62D5E81DF8DD78004510A5 /* JHNavigationController.m */,
+				BE62D5E91DF8DD78004510A5 /* JHObject.h */,
+				BE62D5EA1DF8DD78004510A5 /* JHObject.m */,
+				BE62D5EB1DF8DD78004510A5 /* JHRequest.h */,
+				BE62D5EC1DF8DD78004510A5 /* JHRequest.m */,
+				BE62D5ED1DF8DD78004510A5 /* JHResponse.h */,
+				BE62D5EE1DF8DD78004510A5 /* JHResponse.m */,
+				BE62D5EF1DF8DD78004510A5 /* JHViewController.h */,
+				BE62D5F01DF8DD78004510A5 /* JHViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		BE62D5F31DF8DD78004510A5 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BE62D5F41DF8DD78004510A5 /* JHAddressBookReader.h */,
+				BE62D5F51DF8DD78004510A5 /* JHAddressBookReader.m */,
+				BE62D5F61DF8DD78004510A5 /* JHContact.h */,
+				BE62D5F71DF8DD78004510A5 /* JHContact.m */,
+				BE62D5F81DF8DD78004510A5 /* JHLocalSettings.h */,
+				BE62D5F91DF8DD78004510A5 /* JHLocalSettings.m */,
+				BE62D5FA1DF8DD78004510A5 /* JHNetworkManager.h */,
+				BE62D5FB1DF8DD78004510A5 /* JHNetworkManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		BE62D5FC1DF8DD78004510A5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BE62D5FD1DF8DD78004510A5 /* JHActionSheet.h */,
+				BE62D5FE1DF8DD78004510A5 /* JHActionSheet.m */,
+				BE62D5FF1DF8DD78004510A5 /* JHAlert.h */,
+				BE62D6001DF8DD78004510A5 /* JHAlert.m */,
+				BE62D6011DF8DD78004510A5 /* JHBadgeView.h */,
+				BE62D6021DF8DD78004510A5 /* JHBadgeView.m */,
+				BE62D6031DF8DD78004510A5 /* JHButton.h */,
+				BE62D6041DF8DD78004510A5 /* JHButton.m */,
+				BE62D6051DF8DD78004510A5 /* JHCollectionView.h */,
+				BE62D6061DF8DD78004510A5 /* JHCollectionView.m */,
+				BE62D6071DF8DD78004510A5 /* JHCollectionViewCell.h */,
+				BE62D6081DF8DD78004510A5 /* JHCollectionViewCell.m */,
+				BE62D6091DF8DD78004510A5 /* JHImageView.h */,
+				BE62D60A1DF8DD78004510A5 /* JHImageView.m */,
+				BE62D60B1DF8DD78004510A5 /* JHLabel.h */,
+				BE62D60C1DF8DD78004510A5 /* JHLabel.m */,
+				BE62D60D1DF8DD78004510A5 /* JHPopoverView.h */,
+				BE62D60E1DF8DD78004510A5 /* JHPopoverView.m */,
+				BE62D60F1DF8DD78004510A5 /* JHShakingView.h */,
+				BE62D6101DF8DD78004510A5 /* JHShakingView.m */,
+				BE62D6111DF8DD78004510A5 /* JHTableView.h */,
+				BE62D6121DF8DD78004510A5 /* JHTableView.m */,
+				BE62D6131DF8DD78004510A5 /* JHTableViewCell.h */,
+				BE62D6141DF8DD78004510A5 /* JHTableViewCell.m */,
+				BE62D6151DF8DD78004510A5 /* JHTextField.h */,
+				BE62D6161DF8DD78004510A5 /* JHTextField.m */,
+				BE62D6171DF8DD78004510A5 /* JHTextView.h */,
+				BE62D6181DF8DD78004510A5 /* JHTextView.m */,
+				BE62D6191DF8DD78004510A5 /* JHView.h */,
+				BE62D61A1DF8DD78004510A5 /* JHView.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		BE62D61B1DF8DD78004510A5 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				BE62D61C1DF8DD78004510A5 /* JHCategorys.h */,
+				BE62D61D1DF8DD78004510A5 /* NS */,
+				BE62D6281DF8DD78004510A5 /* UI */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		BE62D61D1DF8DD78004510A5 /* NS */ = {
+			isa = PBXGroup;
+			children = (
+				BE62D61E1DF8DD78004510A5 /* NSArray+JHKit.h */,
+				BE62D61F1DF8DD78004510A5 /* NSArray+JHKit.m */,
+				BE62D6201DF8DD78004510A5 /* NSData+JHKit.h */,
+				BE62D6211DF8DD78004510A5 /* NSData+JHKit.m */,
+				BE62D6221DF8DD78004510A5 /* NSDate+JHKit.h */,
+				BE62D6231DF8DD78004510A5 /* NSDate+JHKit.m */,
+				BE62D6241DF8DD78004510A5 /* NSObject+JHKit.h */,
+				BE62D6251DF8DD78004510A5 /* NSObject+JHKit.m */,
+				BE62D6261DF8DD78004510A5 /* NSString+JHKit.h */,
+				BE62D6271DF8DD78004510A5 /* NSString+JHKit.m */,
+			);
+			path = NS;
+			sourceTree = "<group>";
+		};
+		BE62D6281DF8DD78004510A5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BE62D6291DF8DD78004510A5 /* UIColor+JHKit.h */,
+				BE62D62A1DF8DD78004510A5 /* UIColor+JHKit.m */,
+				BE62D62B1DF8DD78004510A5 /* UIImage+JHKit.h */,
+				BE62D62C1DF8DD78004510A5 /* UIImage+JHKit.m */,
+				BE62D62D1DF8DD78004510A5 /* UIImageView+JHKit.h */,
+				BE62D62E1DF8DD78004510A5 /* UIImageView+JHKit.m */,
+				BE62D62F1DF8DD78004510A5 /* UIScrollView+JHKit.h */,
+				BE62D6301DF8DD78004510A5 /* UIScrollView+JHKit.m */,
+				BE62D6311DF8DD78004510A5 /* UIView+JHKit.h */,
+				BE62D6321DF8DD78004510A5 /* UIView+JHKit.m */,
+				BE62D6331DF8DD78004510A5 /* UIViewController+JHKit.h */,
+				BE62D6341DF8DD78004510A5 /* UIViewController+JHKit.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		BE62D6351DF8DD78004510A5 /* BaseMacro */ = {
+			isa = PBXGroup;
+			children = (
+				BE62D6361DF8DD78004510A5 /* Constants */,
+				BE62D6421DF8DD78004510A5 /* JHMacro.h */,
+				BE62D6431DF8DD78004510A5 /* Type */,
+			);
+			path = BaseMacro;
+			sourceTree = "<group>";
+		};
+		BE62D6361DF8DD78004510A5 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				BE62D6371DF8DD78004510A5 /* JHConstants.h */,
+				BE62D6381DF8DD78004510A5 /* JHConstants_AppInfo.h */,
+				BE62D6391DF8DD78004510A5 /* JHConstants_Color.h */,
+				BE62D63A1DF8DD78004510A5 /* JHConstants_Device.h */,
+				BE62D63B1DF8DD78004510A5 /* JHConstants_Font.h */,
+				BE62D63C1DF8DD78004510A5 /* JHConstants_Localize.h */,
+				BE62D63D1DF8DD78004510A5 /* JHConstants_Log.h */,
+				BE62D63E1DF8DD78004510A5 /* JHConstants_Math.h */,
+				BE62D63F1DF8DD78004510A5 /* JHConstants_Notification.h */,
+				BE62D6401DF8DD78004510A5 /* JHConstants_OpenUrl.h */,
+				BE62D6411DF8DD78004510A5 /* JHConstants_Version.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		BE62D6431DF8DD78004510A5 /* Type */ = {
+			isa = PBXGroup;
+			children = (
+				BE62D6441DF8DD78004510A5 /* JHClassType.h */,
+				BE62D6451DF8DD78004510A5 /* JHDataType.h */,
+				BE62D6461DF8DD78004510A5 /* JHEnumType.h */,
+				BE62D6471DF8DD78004510A5 /* JHStructType.h */,
+			);
+			path = Type;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -93,7 +443,62 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE62D6991DF8DD78004510A5 /* JHConstants_Math.h in Headers */,
+				BE62D6981DF8DD78004510A5 /* JHConstants_Log.h in Headers */,
+				BE62D67E1DF8DD78004510A5 /* NSData+JHKit.h in Headers */,
+				BE62D68A1DF8DD78004510A5 /* UIImageView+JHKit.h in Headers */,
+				BE62D69B1DF8DD78004510A5 /* JHConstants_OpenUrl.h in Headers */,
+				BE62D6671DF8DD78004510A5 /* JHCollectionViewCell.h in Headers */,
+				BE62D69F1DF8DD78004510A5 /* JHDataType.h in Headers */,
+				BE62D66F1DF8DD78004510A5 /* JHShakingView.h in Headers */,
+				BE62D6881DF8DD78004510A5 /* UIImage+JHKit.h in Headers */,
+				BE62D6731DF8DD78004510A5 /* JHTableViewCell.h in Headers */,
+				BE62D6491DF8DD78004510A5 /* JHNavigationController.h in Headers */,
+				BE62D6591DF8DD78004510A5 /* JHLocalSettings.h in Headers */,
+				BE62D6901DF8DD78004510A5 /* UIViewController+JHKit.h in Headers */,
+				BE62D65D1DF8DD78004510A5 /* JHActionSheet.h in Headers */,
+				BE62D69E1DF8DD78004510A5 /* JHClassType.h in Headers */,
+				BE62D6841DF8DD78004510A5 /* NSString+JHKit.h in Headers */,
+				BE62D67C1DF8DD78004510A5 /* NSArray+JHKit.h in Headers */,
+				BE62D68E1DF8DD78004510A5 /* UIView+JHKit.h in Headers */,
+				BE62D6801DF8DD78004510A5 /* NSDate+JHKit.h in Headers */,
+				BE62D6611DF8DD78004510A5 /* JHBadgeView.h in Headers */,
+				BE62D68C1DF8DD78004510A5 /* UIScrollView+JHKit.h in Headers */,
+				BE62D67B1DF8DD78004510A5 /* JHCategorys.h in Headers */,
+				BE62D6791DF8DD78004510A5 /* JHView.h in Headers */,
+				BE62D66D1DF8DD78004510A5 /* JHPopoverView.h in Headers */,
+				BE62D66B1DF8DD78004510A5 /* JHLabel.h in Headers */,
+				BE62D69A1DF8DD78004510A5 /* JHConstants_Notification.h in Headers */,
+				BE62D6921DF8DD78004510A5 /* JHConstants.h in Headers */,
+				BE62D64D1DF8DD78004510A5 /* JHRequest.h in Headers */,
+				BE62D69C1DF8DD78004510A5 /* JHConstants_Version.h in Headers */,
+				BE62D6A01DF8DD78004510A5 /* JHEnumType.h in Headers */,
+				BE62D6751DF8DD78004510A5 /* JHTextField.h in Headers */,
+				BE62D6651DF8DD78004510A5 /* JHCollectionView.h in Headers */,
+				BE62D6571DF8DD78004510A5 /* JHContact.h in Headers */,
+				BE62D6511DF8DD78004510A5 /* JHViewController.h in Headers */,
+				BE62D6941DF8DD78004510A5 /* JHConstants_Color.h in Headers */,
+				BE62D6541DF8DD78004510A5 /* JHWidgets.h in Headers */,
+				BE62D65B1DF8DD78004510A5 /* JHNetworkManager.h in Headers */,
+				BE62D6931DF8DD78004510A5 /* JHConstants_AppInfo.h in Headers */,
+				BE62D69D1DF8DD78004510A5 /* JHMacro.h in Headers */,
+				BE62D6631DF8DD78004510A5 /* JHButton.h in Headers */,
+				BE62D6861DF8DD78004510A5 /* UIColor+JHKit.h in Headers */,
+				BE62D65F1DF8DD78004510A5 /* JHAlert.h in Headers */,
+				BE62D6711DF8DD78004510A5 /* JHTableView.h in Headers */,
+				BE62D6771DF8DD78004510A5 /* JHTextView.h in Headers */,
+				BE62D6971DF8DD78004510A5 /* JHConstants_Localize.h in Headers */,
+				BE62D64B1DF8DD78004510A5 /* JHObject.h in Headers */,
+				BE62D6551DF8DD78004510A5 /* JHAddressBookReader.h in Headers */,
+				BE62D64F1DF8DD78004510A5 /* JHResponse.h in Headers */,
+				BE62D6481DF8DD78004510A5 /* JHKit-Prefix.pch in Headers */,
+				BE62D6961DF8DD78004510A5 /* JHConstants_Font.h in Headers */,
 				BE62D5DB1DF8DAFD004510A5 /* JHKit.h in Headers */,
+				BE62D6951DF8DD78004510A5 /* JHConstants_Device.h in Headers */,
+				BE62D6531DF8DD78004510A5 /* JHBases.h in Headers */,
+				BE62D6A11DF8DD78004510A5 /* JHStructType.h in Headers */,
+				BE62D6821DF8DD78004510A5 /* NSObject+JHKit.h in Headers */,
+				BE62D6691DF8DD78004510A5 /* JHImageView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +602,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE62D66E1DF8DD78004510A5 /* JHPopoverView.m in Sources */,
+				BE62D6891DF8DD78004510A5 /* UIImage+JHKit.m in Sources */,
+				BE62D6681DF8DD78004510A5 /* JHCollectionViewCell.m in Sources */,
+				BE62D6701DF8DD78004510A5 /* JHShakingView.m in Sources */,
+				BE62D67F1DF8DD78004510A5 /* NSData+JHKit.m in Sources */,
+				BE62D6661DF8DD78004510A5 /* JHCollectionView.m in Sources */,
+				BE62D6561DF8DD78004510A5 /* JHAddressBookReader.m in Sources */,
+				BE62D6501DF8DD78004510A5 /* JHResponse.m in Sources */,
+				BE62D65A1DF8DD78004510A5 /* JHLocalSettings.m in Sources */,
+				BE62D6831DF8DD78004510A5 /* NSObject+JHKit.m in Sources */,
+				BE62D6601DF8DD78004510A5 /* JHAlert.m in Sources */,
+				BE62D67A1DF8DD78004510A5 /* JHView.m in Sources */,
+				BE62D65E1DF8DD78004510A5 /* JHActionSheet.m in Sources */,
+				BE62D6761DF8DD78004510A5 /* JHTextField.m in Sources */,
+				BE62D6521DF8DD78004510A5 /* JHViewController.m in Sources */,
+				BE62D68B1DF8DD78004510A5 /* UIImageView+JHKit.m in Sources */,
+				BE62D66A1DF8DD78004510A5 /* JHImageView.m in Sources */,
+				BE62D65C1DF8DD78004510A5 /* JHNetworkManager.m in Sources */,
+				BE62D6851DF8DD78004510A5 /* NSString+JHKit.m in Sources */,
+				BE62D64C1DF8DD78004510A5 /* JHObject.m in Sources */,
+				BE62D6621DF8DD78004510A5 /* JHBadgeView.m in Sources */,
+				BE62D6741DF8DD78004510A5 /* JHTableViewCell.m in Sources */,
+				BE62D6781DF8DD78004510A5 /* JHTextView.m in Sources */,
+				BE62D6911DF8DD78004510A5 /* UIViewController+JHKit.m in Sources */,
+				BE62D64E1DF8DD78004510A5 /* JHRequest.m in Sources */,
+				BE62D66C1DF8DD78004510A5 /* JHLabel.m in Sources */,
+				BE62D6581DF8DD78004510A5 /* JHContact.m in Sources */,
+				BE62D6811DF8DD78004510A5 /* NSDate+JHKit.m in Sources */,
+				BE62D67D1DF8DD78004510A5 /* NSArray+JHKit.m in Sources */,
+				BE62D6721DF8DD78004510A5 /* JHTableView.m in Sources */,
+				BE62D64A1DF8DD78004510A5 /* JHNavigationController.m in Sources */,
+				BE62D6871DF8DD78004510A5 /* UIColor+JHKit.m in Sources */,
+				BE62D68F1DF8DD78004510A5 /* UIView+JHKit.m in Sources */,
+				BE62D68D1DF8DD78004510A5 /* UIScrollView+JHKit.m in Sources */,
+				BE62D6641DF8DD78004510A5 /* JHButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +764,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JHKit/JHKit-Prefix.pch";
 				INFOPLIST_FILE = JHKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -342,6 +784,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JHKit/JHKit-Prefix.pch";
 				INFOPLIST_FILE = JHKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -392,6 +836,7 @@
 				BE62D5E01DF8DAFD004510A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE62D5E11DF8DAFD004510A5 /* Build configuration list for PBXNativeTarget "JHKitTests" */ = {
 			isa = XCConfigurationList;
@@ -400,6 +845,7 @@
 				BE62D5E31DF8DAFD004510A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

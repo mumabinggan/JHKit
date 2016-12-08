@@ -8,7 +8,10 @@
     "DF461CAADB13706454B17F2BB50F488BBAD743E5" : 9223372036854775807,
     "4182765C525509B305166AB949D5935FD5C85212" : 9223372036854775807,
     "2454A7C0A4BC2A09472718EB55354F320600B245" : 9223372036854775807,
+    "CADC4D1B031AED4FEFB66A1DCF54AE5FF592E1F0" : 9223372036854775807,
+    "272F684BDB48C12FB82F63EFB90FF2436BBA2473" : 9223372036854775807,
     "E28E36D423EC87798E52E2BF482E9F7A1E6479D6" : 9223372036854775807,
+    "006A7D95C656020B2B8BEBAEF6C91D51CCBBD72C" : 9223372036854775807,
     "DD20A1A48C66B5213E0FEBB87A95EF51D6C6F3E8" : 9223372036854775807,
     "04101981B66E318109934C9516F88D824BB96459" : 9223372036854775807
   },
@@ -18,7 +21,10 @@
     "DF461CAADB13706454B17F2BB50F488BBAD743E5" : "JHKit\/Submodules\/IQKeyboardManager\/",
     "4182765C525509B305166AB949D5935FD5C85212" : "JHKit\/Submodules\/MBProgressHUD\/",
     "2454A7C0A4BC2A09472718EB55354F320600B245" : "JHKit\/Submodules\/JsonModel\/",
+    "CADC4D1B031AED4FEFB66A1DCF54AE5FF592E1F0" : "JHKit\/Submodules\/SDWebImage\/Vendors\/FLAnimatedImage\/",
+    "272F684BDB48C12FB82F63EFB90FF2436BBA2473" : "JHKit\/Submodules\/SDWebImage\/Vendors\/libwebp\/",
     "E28E36D423EC87798E52E2BF482E9F7A1E6479D6" : "JHKit\/Submodules\/SDWebImage\/",
+    "006A7D95C656020B2B8BEBAEF6C91D51CCBBD72C" : "JHKit\/Submodules\/SDVersion\/",
     "DD20A1A48C66B5213E0FEBB87A95EF51D6C6F3E8" : "JHKit\/Submodules\/AFNetworking\/",
     "04101981B66E318109934C9516F88D824BB96459" : "JHKit\/Submodules\/FMDB\/"
   },
@@ -26,6 +32,11 @@
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "JHKit.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mumabinggan\/SDVersion.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "006A7D95C656020B2B8BEBAEF6C91D51CCBBD72C"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mumabinggan\/fmdb.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
@@ -37,6 +48,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2454A7C0A4BC2A09472718EB55354F320600B245"
     },
     {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/webmproject\/libwebp",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "272F684BDB48C12FB82F63EFB90FF2436BBA2473"
+    },
+    {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mumabinggan\/MBProgressHUD.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4182765C525509B305166AB949D5935FD5C85212"
@@ -45,6 +61,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mumabinggan\/JHKit.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AAA83BEF7EE837461CD677AD1491FD3A728FB6E2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Flipboard\/FLAnimatedImage",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CADC4D1B031AED4FEFB66A1DCF54AE5FF592E1F0"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mumabinggan\/AFNetworking.git",

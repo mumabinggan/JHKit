@@ -119,6 +119,9 @@
 		BE62E1BE1DF912AC004510A5 /* centerIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE62E1B11DF912AC004510A5 /* centerIcon@2x.png */; };
 		BE62E1BF1DF912AC004510A5 /* TWRefreshIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62E1B21DF912AC004510A5 /* TWRefreshIndicatorView.h */; };
 		BE62E1C01DF912AC004510A5 /* TWRefreshIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62E1B31DF912AC004510A5 /* TWRefreshIndicatorView.m */; };
+		BE62E5A91DF95F09004510A5 /* SDVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62E5A51DF95F09004510A5 /* SDVersion.h */; };
+		BE62E5AA1DF95F09004510A5 /* SDiOSVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62E5A71DF95F09004510A5 /* SDiOSVersion.h */; };
+		BE62E5AB1DF95F09004510A5 /* SDiOSVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62E5A81DF95F09004510A5 /* SDiOSVersion.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -415,6 +418,9 @@
 		BE62E1B11DF912AC004510A5 /* centerIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "centerIcon@2x.png"; sourceTree = "<group>"; };
 		BE62E1B21DF912AC004510A5 /* TWRefreshIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRefreshIndicatorView.h; sourceTree = "<group>"; };
 		BE62E1B31DF912AC004510A5 /* TWRefreshIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRefreshIndicatorView.m; sourceTree = "<group>"; };
+		BE62E5A51DF95F09004510A5 /* SDVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDVersion.h; path = SDVersion/SDVersion.h; sourceTree = "<group>"; };
+		BE62E5A71DF95F09004510A5 /* SDiOSVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDiOSVersion.h; sourceTree = "<group>"; };
+		BE62E5A81DF95F09004510A5 /* SDiOSVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDiOSVersion.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -653,6 +659,7 @@
 		BE62DA201DF90ED3004510A5 /* Submodules */ = {
 			isa = PBXGroup;
 			children = (
+				BE62E4E11DF95EF1004510A5 /* SDVersion */,
 				BE62E17A1DF90F14004510A5 /* AFNetworking.xcodeproj */,
 				BE62E1651DF90F0D004510A5 /* fmdb.xcodeproj */,
 				BE62E15C1DF90F06004510A5 /* IQKeyboardManager.xcodeproj */,
@@ -781,6 +788,25 @@
 			path = Indicators;
 			sourceTree = "<group>";
 		};
+		BE62E4E11DF95EF1004510A5 /* SDVersion */ = {
+			isa = PBXGroup;
+			children = (
+				BE62E5A51DF95F09004510A5 /* SDVersion.h */,
+				BE62E5A61DF95F09004510A5 /* SDiOSVersion */,
+			);
+			path = SDVersion;
+			sourceTree = "<group>";
+		};
+		BE62E5A61DF95F09004510A5 /* SDiOSVersion */ = {
+			isa = PBXGroup;
+			children = (
+				BE62E5A71DF95F09004510A5 /* SDiOSVersion.h */,
+				BE62E5A81DF95F09004510A5 /* SDiOSVersion.m */,
+			);
+			name = SDiOSVersion;
+			path = SDVersion/SDiOSVersion;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -818,6 +844,7 @@
 				BE62D6791DF8DD78004510A5 /* JHView.h in Headers */,
 				BE62D66D1DF8DD78004510A5 /* JHPopoverView.h in Headers */,
 				BE62D66B1DF8DD78004510A5 /* JHLabel.h in Headers */,
+				BE62E5A91DF95F09004510A5 /* SDVersion.h in Headers */,
 				BE62D69A1DF8DD78004510A5 /* JHConstants_Notification.h in Headers */,
 				BE62D6921DF8DD78004510A5 /* JHConstants.h in Headers */,
 				BE62D64D1DF8DD78004510A5 /* JHRequest.h in Headers */,
@@ -841,6 +868,7 @@
 				BE62D6971DF8DD78004510A5 /* JHConstants_Localize.h in Headers */,
 				BE62D64B1DF8DD78004510A5 /* JHObject.h in Headers */,
 				BE62E1B41DF912AC004510A5 /* TWRefreshIndicator.h in Headers */,
+				BE62E5AA1DF95F09004510A5 /* SDiOSVersion.h in Headers */,
 				BE62D6551DF8DD78004510A5 /* JHAddressBookReader.h in Headers */,
 				BE62D64F1DF8DD78004510A5 /* JHResponse.h in Headers */,
 				BE62D6481DF8DD78004510A5 /* JHKit-Prefix.pch in Headers */,
@@ -1182,6 +1210,7 @@
 				BE62D6781DF8DD78004510A5 /* JHTextView.m in Sources */,
 				BE62D6911DF8DD78004510A5 /* UIViewController+JHKit.m in Sources */,
 				BE62D64E1DF8DD78004510A5 /* JHRequest.m in Sources */,
+				BE62E5AB1DF95F09004510A5 /* SDiOSVersion.m in Sources */,
 				BE62D66C1DF8DD78004510A5 /* JHLabel.m in Sources */,
 				BE62E1C01DF912AC004510A5 /* TWRefreshIndicatorView.m in Sources */,
 				BE62D6581DF8DD78004510A5 /* JHContact.m in Sources */,

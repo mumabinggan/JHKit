@@ -1,0 +1,18 @@
+[submodule "Submodules/SDWebImage"]
+	path = Submodules/SDWebImage
+	url = https://github.com/mumabinggan/SDWebImage.git
+[submodule "Submodules/AFNetworking"]
+	path = Submodules/AFNetworking
+	url = https://github.com/mumabinggan/AFNetworking.git
+[submodule "Submodules/MBProgressHUD"]
+	path = Submodules/MBProgressHUD
+	url = https://github.com/mumabinggan/MBProgressHUD.git
+[submodule "Submodules/IQKeyboardManager"]
+	path = Submodules/IQKeyboardManager
+	url = https://github.com/mumabinggan/IQKeyboardManager.git
+[submodule "Submodules/FMDB"]
+	path = Submodules/FMDB
+	url = https://github.com/mumabinggan/fmdb.git
+[submodule "Submodules/JsonModel"]
+	path = Submodules/JsonModel
+	url = https://github.com/mumabinggan/jsonmodel.git

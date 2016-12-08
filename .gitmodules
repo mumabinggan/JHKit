@@ -16,3 +16,6 @@
 [submodule "Submodules/JsonModel"]
 	path = Submodules/JsonModel
 	url = https://github.com/mumabinggan/jsonmodel.git
+[submodule "Submodules/SDVersion"]
+	path = Submodules/SDVersion
+	url = https://github.com/mumabinggan/SDVersion.git

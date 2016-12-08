@@ -43,6 +43,18 @@
     #define kDeviceHeightScaleTo47Inch (kDeviceHeight/667.0)
 #endif
 
+#ifndef kAppTabbarHeight
+    #define kAppTabbarHeight 49
+#endif
+
+#ifndef kAppStateHeight
+    #define kAppStateHeight [[UIApplication sharedApplication] statusBarFrame].size.height
+#endif
+
+#ifndef kAppNavigationBarHeight
+    #define kAppNavigationBarHeight 44
+#endif
+
 #define kAppAdaptHeight(height) (height*kDeviceWidthScaleToiPhone6)
 #define kAppAdaptWidth(width) (width*kDeviceWidthScaleToiPhone6)
 

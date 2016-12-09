@@ -43,8 +43,8 @@
     #define kDeviceHeightScaleTo47Inch (kDeviceHeight/667.0)
 #endif
 
-#ifndef kAppTabbarHeight
-    #define kAppTabbarHeight 49
+#ifndef kAppTabBarHeight
+    #define kAppTabBarHeight 49
 #endif
 
 #ifndef kAppStateHeight

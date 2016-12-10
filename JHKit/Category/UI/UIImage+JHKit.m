@@ -77,3 +77,15 @@
 }
 
 @end
+
+@implementation UIImage (Size)
+
+- (float)width {
+    return self.size.width;
+}
+
+- (float)height {
+    return self.size.height;
+}
+
+@end

@@ -14,16 +14,16 @@ typedef NS_ENUM(NSInteger, JHWebImageOptions) {
     JHWebImageOptionsRetryFailed = 1 << 0,
     
     //when scrollView is scroll, delay download
-    JHWebImageOptionsLowPriority = 1 << 0,
+    JHWebImageOptionsLowPriority = 1 << 1,
     
     //cache memory only
-    JHWebImageOptionsCacheMemoryOnly = 1 << 0,
+    JHWebImageOptionsCacheMemoryOnly = 1 << 2,
     
     //progressive download
-    JHWebImageOptionsProgressiveDownload = 1 << 0,
+    JHWebImageOptionsProgressiveDownload = 1 << 3,
     
     //cache disk, NSURLCache will deal
-    JHWebImageOptionsRefreshCached = 1 << 0,
+    JHWebImageOptionsRefreshCached = 1 << 4,
 };
 
 typedef NS_ENUM(NSInteger, JHImageCacheType) {

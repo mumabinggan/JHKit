@@ -24,5 +24,6 @@
 #import "JHShakingView.h"
 #import "JHTextView.h"
 #import "JHTextField.h"
+#import "JHScrollView.h"
 
 #endif /* JHWidgets_h */

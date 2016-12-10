@@ -122,6 +122,10 @@
 		BE62E5A91DF95F09004510A5 /* SDVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62E5A51DF95F09004510A5 /* SDVersion.h */; };
 		BE62E5AA1DF95F09004510A5 /* SDiOSVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62E5A71DF95F09004510A5 /* SDiOSVersion.h */; };
 		BE62E5AB1DF95F09004510A5 /* SDiOSVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62E5A81DF95F09004510A5 /* SDiOSVersion.m */; };
+		BEB2D92F1DFBE75500F2E74B /* UIButton+JHKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB2D92D1DFBE75500F2E74B /* UIButton+JHKit.h */; };
+		BEB2D9301DFBE75500F2E74B /* UIButton+JHKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB2D92E1DFBE75500F2E74B /* UIButton+JHKit.m */; };
+		BEB2D9651DFBF2AA00F2E74B /* JHScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB2D9631DFBF2AA00F2E74B /* JHScrollView.h */; };
+		BEB2D9661DFBF2AA00F2E74B /* JHScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB2D9641DFBF2AA00F2E74B /* JHScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -421,6 +425,10 @@
 		BE62E5A51DF95F09004510A5 /* SDVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDVersion.h; path = SDVersion/SDVersion.h; sourceTree = "<group>"; };
 		BE62E5A71DF95F09004510A5 /* SDiOSVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDiOSVersion.h; sourceTree = "<group>"; };
 		BE62E5A81DF95F09004510A5 /* SDiOSVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDiOSVersion.m; sourceTree = "<group>"; };
+		BEB2D92D1DFBE75500F2E74B /* UIButton+JHKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+JHKit.h"; sourceTree = "<group>"; };
+		BEB2D92E1DFBE75500F2E74B /* UIButton+JHKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JHKit.m"; sourceTree = "<group>"; };
+		BEB2D9631DFBF2AA00F2E74B /* JHScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHScrollView.h; sourceTree = "<group>"; };
+		BEB2D9641DFBF2AA00F2E74B /* JHScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -567,6 +575,8 @@
 				BE62D6181DF8DD78004510A5 /* JHTextView.m */,
 				BE62D6191DF8DD78004510A5 /* JHView.h */,
 				BE62D61A1DF8DD78004510A5 /* JHView.m */,
+				BEB2D9631DFBF2AA00F2E74B /* JHScrollView.h */,
+				BEB2D9641DFBF2AA00F2E74B /* JHScrollView.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -613,6 +623,8 @@
 				BE62D6321DF8DD78004510A5 /* UIView+JHKit.m */,
 				BE62D6331DF8DD78004510A5 /* UIViewController+JHKit.h */,
 				BE62D6341DF8DD78004510A5 /* UIViewController+JHKit.m */,
+				BEB2D92D1DFBE75500F2E74B /* UIButton+JHKit.h */,
+				BEB2D92E1DFBE75500F2E74B /* UIButton+JHKit.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -826,6 +838,7 @@
 				BE62D69F1DF8DD78004510A5 /* JHDataType.h in Headers */,
 				BE62E1BC1DF912AC004510A5 /* TWRefreshTableView.h in Headers */,
 				BE62D66F1DF8DD78004510A5 /* JHShakingView.h in Headers */,
+				BEB2D9651DFBF2AA00F2E74B /* JHScrollView.h in Headers */,
 				BE62D6881DF8DD78004510A5 /* UIImage+JHKit.h in Headers */,
 				BE62D6731DF8DD78004510A5 /* JHTableViewCell.h in Headers */,
 				BE62D6491DF8DD78004510A5 /* JHNavigationController.h in Headers */,
@@ -857,6 +870,7 @@
 				BE62D6511DF8DD78004510A5 /* JHViewController.h in Headers */,
 				BE62D6941DF8DD78004510A5 /* JHConstants_Color.h in Headers */,
 				BE62D6541DF8DD78004510A5 /* JHWidgets.h in Headers */,
+				BEB2D92F1DFBE75500F2E74B /* UIButton+JHKit.h in Headers */,
 				BE62D65B1DF8DD78004510A5 /* JHNetworkManager.h in Headers */,
 				BE62D6931DF8DD78004510A5 /* JHConstants_AppInfo.h in Headers */,
 				BE62D69D1DF8DD78004510A5 /* JHMacro.h in Headers */,
@@ -1182,6 +1196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEB2D9661DFBF2AA00F2E74B /* JHScrollView.m in Sources */,
 				BE62E1B81DF912AC004510A5 /* UIScrollView+TWRefresh.m in Sources */,
 				BE62E1BB1DF912AC004510A5 /* TWRefreshCollectionView.m in Sources */,
 				BE62D66E1DF8DD78004510A5 /* JHPopoverView.m in Sources */,
@@ -1202,6 +1217,7 @@
 				BE62D6521DF8DD78004510A5 /* JHViewController.m in Sources */,
 				BE62D68B1DF8DD78004510A5 /* UIImageView+JHKit.m in Sources */,
 				BE62D66A1DF8DD78004510A5 /* JHImageView.m in Sources */,
+				BEB2D9301DFBE75500F2E74B /* UIButton+JHKit.m in Sources */,
 				BE62D65C1DF8DD78004510A5 /* JHNetworkManager.m in Sources */,
 				BE62D6851DF8DD78004510A5 /* NSString+JHKit.m in Sources */,
 				BE62D64C1DF8DD78004510A5 /* JHObject.m in Sources */,

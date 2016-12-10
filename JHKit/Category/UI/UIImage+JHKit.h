@@ -24,3 +24,11 @@
 - (UIImage *)tintedImageWithColor:(UIColor *)tintColor;
 
 @end
+
+@interface UIImage (Size)
+
+- (float)width;
+
+- (float)height;
+
+@end

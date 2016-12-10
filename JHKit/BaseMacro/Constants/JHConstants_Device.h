@@ -27,6 +27,10 @@
     #define kAppBounds [[UIScreen mainScreen] bounds]
 #endif
 
+#ifndef kAppScale
+    #define kAppScale [[UIScreen mainScreen] scale]
+#endif
+
 #ifndef kDeviceWidthScaleTo35Inch
     #define kDeviceWidthScaleTo35Inch (kDeviceWidth/320.0)
 #endif
@@ -55,9 +59,14 @@
     #define kAppNavigationBarHeight 44
 #endif
 
-#define kAppAdaptHeight(height) (height*kDeviceWidthScaleToiPhone6)
-#define kAppAdaptWidth(width) (width*kDeviceWidthScaleToiPhone6)
+#ifndef kAppNavigationVCY
+    #define kAppNavigationVCY (kAppNavigationBarHeight + kAppStateHeight)
+#endif
 
-#define kAppSepratorLineHeight (1.0 / [UIScreen mainScreen].scale)
+#define kAppAdaptHeight(height) (((NSInteger)((height) * kDeviceWidthScaleTo47Inch * kAppScale)) / kAppScale)
+
+#define kAppAdaptWidth(width) (((NSInteger)((width) * kDeviceWidthScaleTo47Inch * kAppScale)) / kAppScale)
+
+#define kAppSepratorLineHeight (1.0 / kAppScale)
 
 #endif /* JHConstants_Device_h */

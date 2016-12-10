@@ -101,4 +101,15 @@
     return [super toJSONString];
 }
 
++ (NSDictionary *)convertKeyMapper {
+    return nil;
+}
+
++ (JSONKeyMapper *)keyMapper {
+    if ([self convertKeyMapper]) {
+        return [[JSONKeyMapper alloc] initWithModelToJSONDictionary:[self convertKeyMapper]];
+    }
+    return nil;
+}
+
 @end

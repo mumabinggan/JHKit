@@ -121,3 +121,14 @@
 }
 
 @end
+
+@implementation UIView (GestureRecognizer)
+
+- (void)addSingleTapGestureRecognizerWithTarget:(id)target action:(SEL)action {
+    UITapGestureRecognizer *singleTapRecognizer;
+    singleTapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:target action:action];
+    singleTapRecognizer.numberOfTapsRequired = 1;
+    [self addGestureRecognizer:singleTapRecognizer];
+}
+
+@end

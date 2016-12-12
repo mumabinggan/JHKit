@@ -40,3 +40,9 @@
   backgroundColor:(UIColor *)backgroundColor;
 
 @end
+
+@interface UIView (GestureRecognizer)
+
+- (void)addSingleTapGestureRecognizerWithTarget:(id)target action:(SEL)action;
+
+@end

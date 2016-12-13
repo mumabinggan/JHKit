@@ -46,3 +46,9 @@
 - (void)addSingleTapGestureRecognizerWithTarget:(id)target action:(SEL)action;
 
 @end
+
+@interface UIView (Gradient)
+
+- (void)addGradientColor:(UIColor *)color;
+
+@end

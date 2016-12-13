@@ -13,8 +13,8 @@
 #define kAppFont(size) [UIFont systemFontOfSize:size]
 #define kAppFontBold(size) [UIFont boldSystemFontOfSize:size]
 
-#define kAdaptFont(fsize, name) [UIFont fontWithName:name size:fsize*kDeviceWidthScaleToiPhone6]
-#define kAppAdaptFont(size) [UIFont systemFontOfSize:size*kDeviceWidthScaleToiPhone6]
-#define kAppAdaptFontBold(size) [UIFont boldSystemFontOfSize:size*kDeviceWidthScaleToiPhone6]
+#define kAdaptFont(fsize, name) [UIFont fontWithName:name size:fsize*kDeviceWidthScaleTo47Inch]
+#define kAppAdaptFont(size) [UIFont systemFontOfSize:size*kDeviceWidthScaleTo47Inch]
+#define kAppAdaptFontBold(size) [UIFont boldSystemFontOfSize:size*kDeviceWidthScaleTo47Inch]
 
 #endif /* JHConstants_Font_h */

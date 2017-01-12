@@ -25,5 +25,7 @@
 #import "JHTextView.h"
 #import "JHTextField.h"
 #import "JHScrollView.h"
+#import "TWRefreshTableView.h"
+#import "TWRefreshCollectionView.h"
 
 #endif /* JHWidgets_h */

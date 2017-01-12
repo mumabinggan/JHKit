@@ -12,7 +12,8 @@
 
 @interface JHTableViewCell : UITableViewCell
 {
-    JHObject *_data;
+    JHObject    *_data;
+    JHView      *_contentView;
 }
 
 - (void)showWithData:(JHObject *)data;

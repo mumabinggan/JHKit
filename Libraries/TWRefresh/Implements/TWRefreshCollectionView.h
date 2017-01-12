@@ -19,10 +19,7 @@
 @property (nonatomic, weak) id<TWCollectionViewRefreshingDelegate> refreshDelegate;
 
 // Constructors
-- (id) initWithFrame:(CGRect)frame refreshType:(TWRefreshType)type;
-- (id) initWithFrame:(CGRect)frame refreshType:(TWRefreshType)type andAutoLoad:(BOOL) autoLoad;
-- (id) initWithFrame:(CGRect)frame andAutoLoad:(BOOL) autoLoad;
-- (id) initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout *)layout refreshType:(TWRefreshType) refreshType andAutoLoad:(BOOL) autoLoad;
+- (id) initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout *)layout refreshType:(TWRefreshType) refreshType;
 
 @end
 

@@ -19,7 +19,7 @@
 }
 
 - (void)loadSubviews {
-    
+    //_contentView = [[JHView alloc] initWithFrame:self.frame];
 }
 
 - (void)showWithData:(JHObject *)data {

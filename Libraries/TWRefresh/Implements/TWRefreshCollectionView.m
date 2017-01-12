@@ -11,42 +11,12 @@
 
 @implementation TWRefreshCollectionView
 {
-    BOOL _autoLoad;
     TWRefreshType _refreshType;
 }
 
-- (id) initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
-    if (self) {
-        _refreshType = TWRefreshTypeTop|TWRefreshTypeBottom;
-        _autoLoad = YES;
-        [self prepareRefresh];
-    }
-    return self;
-}
-
-- (id) initWithFrame:(CGRect)frame refreshType:(TWRefreshType)type {
-    return [self initWithFrame:frame refreshType:type andAutoLoad:YES];
-}
-
-- (id) initWithFrame:(CGRect)frame andAutoLoad:(BOOL) autoLoad {
-    return [self initWithFrame:frame refreshType:TWRefreshTypeTop|TWRefreshTypeBottom andAutoLoad:autoLoad];
-}
-
-- (id) initWithFrame:(CGRect)frame refreshType:(TWRefreshType)type andAutoLoad:(BOOL) autoLoad {
-    self = [super initWithFrame:frame];
-    if (self) {
-        _refreshType = type;
-        _autoLoad = autoLoad;
-        [self prepareRefresh];
-    }
-    return self;
-}
-
-- (id) initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout *)layout refreshType:(TWRefreshType) refreshType andAutoLoad:(BOOL) autoLoad {
+- (id) initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout *)layout refreshType:(TWRefreshType) refreshType {
     self = [super initWithFrame:frame collectionViewLayout:layout];
     if (self) {
-        _autoLoad = autoLoad;
         _refreshType = refreshType;
         [self prepareRefresh];
     }

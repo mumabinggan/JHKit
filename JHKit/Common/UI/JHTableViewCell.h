@@ -12,12 +12,14 @@
 
 @interface JHTableViewCell : UITableViewCell
 {
-    JHObject    *_data;
+    //JHObject    *_data;
     JHView      *_contentView;
 }
 
+- (void)loadSubviews;
+
 - (void)showWithData:(JHObject *)data;
 
-- (void)loadSubviews;
+- (void)showWithArray:(NSArray *)array;
 
 @end

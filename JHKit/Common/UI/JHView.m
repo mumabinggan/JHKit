@@ -10,6 +10,14 @@
 
 @implementation JHView
 
+- (id)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self loadSubviews];
+    }
+    return self;
+}
+
 - (id)initWithFrame:(CGRect)frame radius:(CGFloat)radius {
     self = [super initWithFrame:frame];
     if (self) {

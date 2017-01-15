@@ -13,9 +13,14 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
+        [self initData];
         [self loadSubviews];
     }
     return self;
+}
+
+- (void)initData {
+
 }
 
 - (void)loadSubviews {
@@ -23,7 +28,11 @@
 }
 
 - (void)showWithData:(JHObject *)data {
-    _data = data;
+    //_data = data;
+}
+
+- (void)showWithArray:(NSArray *)array {
+
 }
 
 @end

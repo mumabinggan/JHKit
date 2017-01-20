@@ -14,5 +14,6 @@
 #import "JHResponse.h"
 #import "JHViewController.h"
 #import "JHNavigationController.h"
+#import "JHAnimatedImage.h"
 
 #endif /* JHBases_h */

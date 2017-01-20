@@ -6,7 +6,7 @@
 //  Copyright © 2017年 weygo.com. All rights reserved.
 //
 
-#import <SDWebImage iOS static/SDWebImage iOS static.h>
+#import "FLAnimatedImage.h"
 
 @interface JHAnimatedImage : FLAnimatedImage
 

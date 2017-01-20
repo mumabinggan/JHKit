@@ -130,6 +130,12 @@
 		BEB2D9301DFBE75500F2E74B /* UIButton+JHKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB2D92E1DFBE75500F2E74B /* UIButton+JHKit.m */; };
 		BEB2D9651DFBF2AA00F2E74B /* JHScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB2D9631DFBF2AA00F2E74B /* JHScrollView.h */; };
 		BEB2D9661DFBF2AA00F2E74B /* JHScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB2D9641DFBF2AA00F2E74B /* JHScrollView.m */; };
+		BEF6852A1E31B6A0003B745B /* JHCacheManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF685281E31B6A0003B745B /* JHCacheManager.h */; };
+		BEF6852B1E31B6A0003B745B /* JHCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF685291E31B6A0003B745B /* JHCacheManager.m */; };
+		BEF685461E31B972003B745B /* JHAnimatedImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF685441E31B972003B745B /* JHAnimatedImageView.h */; };
+		BEF685471E31B972003B745B /* JHAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF685451E31B972003B745B /* JHAnimatedImageView.m */; };
+		BEF6854A1E31BA60003B745B /* JHAnimatedImage.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF685481E31BA60003B745B /* JHAnimatedImage.h */; };
+		BEF6854B1E31BA60003B745B /* JHAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF685491E31BA60003B745B /* JHAnimatedImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -437,6 +443,12 @@
 		BEB2D92E1DFBE75500F2E74B /* UIButton+JHKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JHKit.m"; sourceTree = "<group>"; };
 		BEB2D9631DFBF2AA00F2E74B /* JHScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHScrollView.h; sourceTree = "<group>"; };
 		BEB2D9641DFBF2AA00F2E74B /* JHScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHScrollView.m; sourceTree = "<group>"; };
+		BEF685281E31B6A0003B745B /* JHCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCacheManager.h; sourceTree = "<group>"; };
+		BEF685291E31B6A0003B745B /* JHCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHCacheManager.m; sourceTree = "<group>"; };
+		BEF685441E31B972003B745B /* JHAnimatedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHAnimatedImageView.h; sourceTree = "<group>"; };
+		BEF685451E31B972003B745B /* JHAnimatedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHAnimatedImageView.m; sourceTree = "<group>"; };
+		BEF685481E31BA60003B745B /* JHAnimatedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHAnimatedImage.h; sourceTree = "<group>"; };
+		BEF685491E31BA60003B745B /* JHAnimatedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHAnimatedImage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -546,6 +558,8 @@
 				BE62D5F91DF8DD78004510A5 /* JHLocalSettings.m */,
 				BE62D5FA1DF8DD78004510A5 /* JHNetworkManager.h */,
 				BE62D5FB1DF8DD78004510A5 /* JHNetworkManager.m */,
+				BEF685281E31B6A0003B745B /* JHCacheManager.h */,
+				BEF685291E31B6A0003B745B /* JHCacheManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -589,6 +603,10 @@
 				BE99E7AA1E1C9DAA00210546 /* JHRefreshTableView.m */,
 				BE83BAFB1E23DECB002F3BCC /* JHCollectionViewLayout.h */,
 				BE83BAFC1E23DECB002F3BCC /* JHCollectionViewLayout.m */,
+				BEF685441E31B972003B745B /* JHAnimatedImageView.h */,
+				BEF685451E31B972003B745B /* JHAnimatedImageView.m */,
+				BEF685481E31BA60003B745B /* JHAnimatedImage.h */,
+				BEF685491E31BA60003B745B /* JHAnimatedImage.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -866,6 +884,7 @@
 				BE62D6611DF8DD78004510A5 /* JHBadgeView.h in Headers */,
 				BE62D68C1DF8DD78004510A5 /* UIScrollView+JHKit.h in Headers */,
 				BE62E1BA1DF912AC004510A5 /* TWRefreshCollectionView.h in Headers */,
+				BEF685461E31B972003B745B /* JHAnimatedImageView.h in Headers */,
 				BE62D67B1DF8DD78004510A5 /* JHCategorys.h in Headers */,
 				BE62D6791DF8DD78004510A5 /* JHView.h in Headers */,
 				BE62D66D1DF8DD78004510A5 /* JHPopoverView.h in Headers */,
@@ -873,6 +892,7 @@
 				BE62D66B1DF8DD78004510A5 /* JHLabel.h in Headers */,
 				BE62E5A91DF95F09004510A5 /* SDVersion.h in Headers */,
 				BE62D69A1DF8DD78004510A5 /* JHConstants_Notification.h in Headers */,
+				BEF6852A1E31B6A0003B745B /* JHCacheManager.h in Headers */,
 				BE62D6921DF8DD78004510A5 /* JHConstants.h in Headers */,
 				BE62D64D1DF8DD78004510A5 /* JHRequest.h in Headers */,
 				BE62E1B51DF912AC004510A5 /* TWRefreshView.h in Headers */,
@@ -883,6 +903,7 @@
 				BE62D6571DF8DD78004510A5 /* JHContact.h in Headers */,
 				BE62D6511DF8DD78004510A5 /* JHViewController.h in Headers */,
 				BE62D6941DF8DD78004510A5 /* JHConstants_Color.h in Headers */,
+				BEF6854A1E31BA60003B745B /* JHAnimatedImage.h in Headers */,
 				BE62D6541DF8DD78004510A5 /* JHWidgets.h in Headers */,
 				BEB2D92F1DFBE75500F2E74B /* UIButton+JHKit.h in Headers */,
 				BE62D65B1DF8DD78004510A5 /* JHNetworkManager.h in Headers */,
@@ -1222,6 +1243,7 @@
 				BE62D6661DF8DD78004510A5 /* JHCollectionView.m in Sources */,
 				BE62D6561DF8DD78004510A5 /* JHAddressBookReader.m in Sources */,
 				BE83BAFE1E23DECB002F3BCC /* JHCollectionViewLayout.m in Sources */,
+				BEF685471E31B972003B745B /* JHAnimatedImageView.m in Sources */,
 				BE62D6501DF8DD78004510A5 /* JHResponse.m in Sources */,
 				BE62D65A1DF8DD78004510A5 /* JHLocalSettings.m in Sources */,
 				BE62D6831DF8DD78004510A5 /* NSObject+JHKit.m in Sources */,
@@ -1229,6 +1251,7 @@
 				BE62D67A1DF8DD78004510A5 /* JHView.m in Sources */,
 				BE62D65E1DF8DD78004510A5 /* JHActionSheet.m in Sources */,
 				BE62D6761DF8DD78004510A5 /* JHTextField.m in Sources */,
+				BEF6854B1E31BA60003B745B /* JHAnimatedImage.m in Sources */,
 				BE62D6521DF8DD78004510A5 /* JHViewController.m in Sources */,
 				BE99E7AC1E1C9DAA00210546 /* JHRefreshTableView.m in Sources */,
 				BE62D68B1DF8DD78004510A5 /* UIImageView+JHKit.m in Sources */,
@@ -1242,6 +1265,7 @@
 				BE62D6781DF8DD78004510A5 /* JHTextView.m in Sources */,
 				BE62D6911DF8DD78004510A5 /* UIViewController+JHKit.m in Sources */,
 				BE62D64E1DF8DD78004510A5 /* JHRequest.m in Sources */,
+				BEF6852B1E31B6A0003B745B /* JHCacheManager.m in Sources */,
 				BE62E5AB1DF95F09004510A5 /* SDiOSVersion.m in Sources */,
 				BE62D66C1DF8DD78004510A5 /* JHLabel.m in Sources */,
 				BE62E1C01DF912AC004510A5 /* TWRefreshIndicatorView.m in Sources */,

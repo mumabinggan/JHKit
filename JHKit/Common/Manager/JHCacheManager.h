@@ -10,4 +10,8 @@
 
 @interface JHCacheManager : NSObject
 
++ (JHCacheManager *)sharedCacheManager;
+
+- (void)clearCache:(void (^)())completion;
+
 @end

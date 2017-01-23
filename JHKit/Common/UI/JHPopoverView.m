@@ -1,14 +1,3 @@
-//
-//  JHPopoverView.m
-//  JHKit
-//
-//  Created by muma on 2016/10/19.
-//  Copyright © 2016年 mumuxinxinCompany. All rights reserved.
-//
-
-#import "JHPopoverView.h"
-//#import "TWConstants.h"
-
 @interface JHPopoverView ()
 
 @property (nonatomic, strong) UIDynamicAnimator *animator;
@@ -219,6 +208,7 @@
 }
 
 - (void)removeFromSuperview {
+    [_animator removeAllBehaviors];
     [super removeFromSuperview];
 }
 
@@ -227,7 +217,7 @@
     self.popviewDidClose = nil;
     self.popviewWillShow = nil;
     self.popviewDidShow = nil;
-    _animator = nil;
+    self.animator = nil;
 #if !__has_feature(objc_arc)
     [super dealloc];
 #endif

@@ -45,7 +45,7 @@ typedef NS_ENUM(NSInteger, JHPopoverViewPosition) {
 
 @property (nonatomic, assign) JHPopoverViewDirection direction;
 @property (nonatomic, assign) JHPopoverViewPosition position;
-@property (nonatomic, assign) CGFloat positionY; // Only take effect when position set to JHPopoverViewPositionCustom
+@property (nonatomic, assign) CGFloat positionY; // Only take effect when position set to TWPopoverViewPositionCustom
 @property (nonatomic, strong) UIColor *maskColor;
 
 @property (nonatomic, assign) JHPopoverViewCloseDirection closeDirection;

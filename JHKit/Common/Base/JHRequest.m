@@ -120,3 +120,32 @@ static NSTimeInterval kREQUEST_TIMEOUT_INTERVAL = 30;
 @implementation JHRequestInputStreamPart
 
 @end
+
+@implementation JHHttpRequest
+
+@end
+
+@implementation JHSoapRequest
+{
+    BOOL _showsLoadingView;
+    BOOL _showsRetryView;
+}
+
+- (id)init {
+    self = [super init];
+    if (self) {
+        _showsLoadingView = YES;
+        _showsRetryView = YES;
+    }
+    return self;
+}
+
++ (NSArray *)ignoredProperties {
+    return @[@"showsLoadingView"];
+}
+
+- (NSString *)url {
+    return @"http://weygo3.cloudhy.com/index.php/api/soap/index";
+}
+
+@end

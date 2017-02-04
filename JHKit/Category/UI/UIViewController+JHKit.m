@@ -213,3 +213,49 @@ static NSString *RetryViewKey = nil;
 }
 
 @end
+
+@implementation UIViewController (SOAPNetwork)
+
+- (void)postSoap:(JHSoapRequest *)request forResponseClass:(Class)clazz success:(void (^)(JHResponse *))success failure:(void (^)(NSError *))failure {
+    [self postSoap:request forResponseClass:clazz progress:nil success:success failure:failure];
+}
+
+- (void)postSoap:(JHSoapRequest *)request forResponseClass:(Class)clazz progress:(void (^)(NSProgress *))progress success:(void (^)(JHResponse *))success failure:(void (^)(NSError *))failure {
+    if (request.showsLoadingView) {
+        [self showsLoadingViewWithSoapRequest:request];
+    }
+    __weak JHSoapRequest *weakRequest = request;
+    __weak id weakSelf = self;
+    [[JHNetworkManager sharedManager] postSoap:request forResponseClass:clazz progress:^(NSProgress *uploadProgress) {
+        if (progress) {
+            progress(uploadProgress);
+        }
+    } success:^(JHResponse *response) {
+        if (weakRequest.showsLoadingView) {
+            [weakSelf removeLoadingView];
+        }
+        if (success != nil) {
+            success(response);
+        }
+    } failure:^(NSError *error) {
+        if (weakRequest.showsLoadingView) {
+            [weakSelf removeLoadingView];
+        }
+        if (weakRequest.showsRetryView) {
+            [weakSelf showsRetryViewWithSoapRequest:weakRequest];
+        }
+        if (failure != nil) {
+            failure(error);
+        }
+    }];
+}
+
+- (void)showsLoadingViewWithSoapRequest:(JHSoapRequest *)request {
+    [self showLoadingViewWithMessage:request.loadingMessage];
+}
+
+- (void)showsRetryViewWithSoapRequest:(JHSoapRequest *)request {
+    [self showRetryViewWithMessage:request.retryMessage];
+}
+
+@end

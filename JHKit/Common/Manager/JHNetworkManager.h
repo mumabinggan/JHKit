@@ -10,6 +10,14 @@
 
 @class JHRequest, JHResponse;
 
+@interface JHLogin : JHObject
+
+@property (nonatomic, assign) long long code;
+@property (nonatomic, strong) NSString *message;
+@property (nonatomic, strong) NSString *sessionId;
+
+@end
+
 @interface JHNetworkManager : NSObject
 
 + (JHNetworkManager *)sharedManager;
@@ -39,5 +47,16 @@
      failure:(void (^)(NSError *error))failure;
 
 - (void)abort:(NSString *)url;
+
+- (void)sss;
+
+- (void)postSoap:(JHSoapRequest *)request forResponseClass:(Class)clazz
+         success:(void (^)(JHResponse *))success
+         failure:(void (^)(NSError *))failure;
+
+- (void)postSoap:(JHSoapRequest *)request forResponseClass:(Class)clazz
+        progress:(void (^)(NSProgress *))progress
+         success:(void (^)(JHResponse *))success
+         failure:(void (^)(NSError *))failure;
 
 @end

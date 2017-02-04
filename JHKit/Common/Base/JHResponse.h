@@ -10,9 +10,9 @@
 
 @interface JHResponse : JHObject
 
-@property (nonatomic, strong) NSString *errorCode;
+@property (nonatomic, strong) NSString *code;
 
-@property (nonatomic, strong) NSString *errorMessage;
+@property (nonatomic, strong) NSString *message;
 
 @property (nonatomic, assign, readonly) BOOL success;
 

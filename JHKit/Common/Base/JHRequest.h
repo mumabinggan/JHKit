@@ -91,3 +91,31 @@
 @property (nonatomic, strong) NSString *mimeType;
 
 @end
+
+@interface JHHttpRequest : JHRequest
+
+@end
+
+@interface JHSoapRequest : JHObject
+
+@property (nonatomic, assign) BOOL showsLoadingView;
+
+@property (nonatomic, strong) NSString *loadingMessage; // only used when showsLoadingView is set to YES
+
+@property (nonatomic, assign) BOOL showsRetryView;
+
+@property (nonatomic, strong) NSString *retryMessage; // only used when showsRetryView is set to YES
+
+@property (nonatomic, strong) NSString *url;
+
+@property (nonatomic, strong) NSString *pathName;
+
+@property (nonatomic, strong) NSString *funcName;
+
+@property (nonatomic, strong) NSArray *parameterKeyArray;
+
+@property (nonatomic, strong) NSArray *parameterTypeArray;
+
+@property (nonatomic, strong) NSArray *parameterValueArray;
+
+@end

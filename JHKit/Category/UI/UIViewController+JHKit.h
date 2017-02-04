@@ -11,6 +11,7 @@
 
 @class JHRequest;
 @class JHResponse;
+@class JHSoapRequest;
 
 @interface UIViewController (UIAssistants)
 
@@ -89,5 +90,13 @@
     progress:(void (^)(NSProgress *uploadProgress))progress
      success:(void (^)(JHResponse *response))success
      failure:(void (^)(NSError *error))failure;
+
+@end
+
+@interface UIViewController (SoapNetwork)
+
+- (void)postSoap:(JHSoapRequest *)request forResponseClass:(Class)clazz
+         success:(void (^)(JHResponse *))success
+         failure:(void (^)(NSError *))failure;
 
 @end

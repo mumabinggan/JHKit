@@ -19,6 +19,3 @@
 [submodule "Submodules/SDVersion"]
 	path = Submodules/SDVersion
 	url = https://github.com/mumabinggan/SDVersion.git
-[submodule "Submodules/GDataXML_HTML"]
-	path = Submodules/GDataXML_HTML
-	url = https://github.com/mumabinggan/GDataXML-HTML.git

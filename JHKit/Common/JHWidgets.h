@@ -20,6 +20,7 @@
 #import "JHCollectionViewCell.h"
 #import "JHTableView.h"
 #import "JHTableViewCell.h"
+#import "JHTableViewHeaderFooterView.h"
 #import "JHPopoverView.h"
 #import "JHShakingView.h"
 #import "JHTextView.h"

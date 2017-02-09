@@ -12,6 +12,7 @@
 #import "JHCategorys.h"
 #import "JHBases.h"
 #import "JHWidgets.h"
+#import "JHManager.h"
 
 //! Project version number for JHKit.
 FOUNDATION_EXPORT double JHKitVersionNumber;

@@ -52,3 +52,13 @@
 - (void)addGradientColor:(UIColor *)color;
 
 @end
+
+@interface UIView (Badge)
+
+@property (nonatomic, strong) UIView *badgeView;
+
+- (void)addBadge;
+
+- (void)showBadge:(BOOL)show text:(NSString *)text;
+
+@end

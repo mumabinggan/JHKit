@@ -10,4 +10,14 @@
 
 @interface UIButton (JHKit)
 
+- (void)setImageWithURL:(nullable NSURL *)url
+               forState:(UIControlState)state
+       placeholderImage:(nullable UIImage *)placeholder
+                options:(JHWebImageOptions)options;
+
+- (void)setBackgroundImageWithURL:(nullable NSURL *)url
+                         forState:(UIControlState)state
+                 placeholderImage:(nullable UIImage *)placeholder
+                          options:(JHWebImageOptions)options;
+
 @end

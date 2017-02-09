@@ -12,7 +12,7 @@
 
 + (JHLocalSettings *)sharedSettings;
 
-- (id)settingsForKey:(NSString *)key;
+- (id)getSettingsForKey:(NSString *)key;
 
 - (void)setSettings:(id)settings forKey:(NSString *)key;
 

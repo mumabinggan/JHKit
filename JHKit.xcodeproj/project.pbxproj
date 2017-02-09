@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE1BBA321E4B2B480008BD68 /* JHTableViewHeaderFooterView.h in Headers */ = {isa = PBXBuildFile; fileRef = BE1BBA301E4B2B480008BD68 /* JHTableViewHeaderFooterView.h */; };
+		BE1BBA331E4B2B480008BD68 /* JHTableViewHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1BBA311E4B2B480008BD68 /* JHTableViewHeaderFooterView.m */; };
 		BE62D5D41DF8DAFD004510A5 /* JHKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE62D5CA1DF8DAFD004510A5 /* JHKit.framework */; };
 		BE62D5D91DF8DAFD004510A5 /* JHKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62D5D81DF8DAFD004510A5 /* JHKitTests.m */; };
 		BE62D5DB1DF8DAFD004510A5 /* JHKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62D5CD1DF8DAFD004510A5 /* JHKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -322,6 +324,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE1BBA301E4B2B480008BD68 /* JHTableViewHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTableViewHeaderFooterView.h; sourceTree = "<group>"; };
+		BE1BBA311E4B2B480008BD68 /* JHTableViewHeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTableViewHeaderFooterView.m; sourceTree = "<group>"; };
 		BE62D5CA1DF8DAFD004510A5 /* JHKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JHKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE62D5CD1DF8DAFD004510A5 /* JHKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHKit.h; sourceTree = "<group>"; };
 		BE62D5CE1DF8DAFD004510A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -448,6 +452,7 @@
 		BEB2D92E1DFBE75500F2E74B /* UIButton+JHKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JHKit.m"; sourceTree = "<group>"; };
 		BEB2D9631DFBF2AA00F2E74B /* JHScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHScrollView.h; sourceTree = "<group>"; };
 		BEB2D9641DFBF2AA00F2E74B /* JHScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHScrollView.m; sourceTree = "<group>"; };
+		BEB8D0BE1E470B4000BB9BA3 /* JHManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHManager.h; sourceTree = "<group>"; };
 		BED1D8D71E4192C300B9AE82 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		BED1D9441E41955700B9AE82 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDataXMLNode.h; path = Pod/Classes/GDataXMLNode.h; sourceTree = "<group>"; };
 		BED1D9451E41955700B9AE82 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GDataXMLNode.m; path = Pod/Classes/GDataXMLNode.m; sourceTree = "<group>"; };
@@ -574,6 +579,7 @@
 				BEF685291E31B6A0003B745B /* JHCacheManager.m */,
 				BED1D9671E419BE000B9AE82 /* JHXMLParserManager.h */,
 				BED1D9681E419BE000B9AE82 /* JHXMLParserManager.m */,
+				BEB8D0BE1E470B4000BB9BA3 /* JHManager.h */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -605,6 +611,8 @@
 				BE62D6121DF8DD78004510A5 /* JHTableView.m */,
 				BE62D6131DF8DD78004510A5 /* JHTableViewCell.h */,
 				BE62D6141DF8DD78004510A5 /* JHTableViewCell.m */,
+				BE1BBA301E4B2B480008BD68 /* JHTableViewHeaderFooterView.h */,
+				BE1BBA311E4B2B480008BD68 /* JHTableViewHeaderFooterView.m */,
 				BE62D6151DF8DD78004510A5 /* JHTextField.h */,
 				BE62D6161DF8DD78004510A5 /* JHTextField.m */,
 				BE62D6171DF8DD78004510A5 /* JHTextView.h */,
@@ -952,6 +960,7 @@
 				BE62D64B1DF8DD78004510A5 /* JHObject.h in Headers */,
 				BE62E1B41DF912AC004510A5 /* TWRefreshIndicator.h in Headers */,
 				BE62E5AA1DF95F09004510A5 /* SDiOSVersion.h in Headers */,
+				BE1BBA321E4B2B480008BD68 /* JHTableViewHeaderFooterView.h in Headers */,
 				BE62D6551DF8DD78004510A5 /* JHAddressBookReader.h in Headers */,
 				BE62D64F1DF8DD78004510A5 /* JHResponse.h in Headers */,
 				BE62D6481DF8DD78004510A5 /* JHKit-Prefix.pch in Headers */,
@@ -1278,6 +1287,7 @@
 				BE62D6561DF8DD78004510A5 /* JHAddressBookReader.m in Sources */,
 				BE83BAFE1E23DECB002F3BCC /* JHCollectionViewLayout.m in Sources */,
 				BEF685471E31B972003B745B /* JHAnimatedImageView.m in Sources */,
+				BE1BBA331E4B2B480008BD68 /* JHTableViewHeaderFooterView.m in Sources */,
 				BE62D6501DF8DD78004510A5 /* JHResponse.m in Sources */,
 				BE62D65A1DF8DD78004510A5 /* JHLocalSettings.m in Sources */,
 				BE62D6831DF8DD78004510A5 /* NSObject+JHKit.m in Sources */,

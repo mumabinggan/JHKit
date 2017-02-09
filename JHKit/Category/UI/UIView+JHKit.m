@@ -8,6 +8,8 @@
 
 #import "UIView+JHKit.h"
 #import "JHMacro.h"
+#import <objc/runtime.h>
+#import "JHBadgeView.h"
 
 @implementation UIView (Frame)
 
@@ -143,6 +145,36 @@
     //layer.locations = @[@0.0f, @1.0f];//渐变颜色的区间分布，locations的数组长度和color一致，这个值一般不用管它，默认是nil，会平均分布
     layer.frame = self.layer.bounds;
     [self.layer addSublayer:layer];
+}
+
+@end
+
+@implementation UIView (Badge)
+
+- (UIView *)badgeView {
+    return objc_getAssociatedObject(self, @selector(badgeView));
+}
+
+- (void)setBadgeView:(UIView *)badgeView {
+    objc_setAssociatedObject(self, @selector(badgeView), badgeView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (void)addBadge {
+    JHBadgeView *badgeView = [[JHBadgeView alloc] initWithFrame:CGRectMake(0, 0, 18, 18) radius:9.0];
+    badgeView.backgroundColor = kHRGB(0x5677FC);
+    badgeView.layer.borderWidth = 2.0f;
+    badgeView.layer.borderColor = kWhiteColor.CGColor;
+    badgeView.layer.cornerRadius = badgeView.radius;
+    badgeView.x = self.width/3;
+    badgeView.y = - self.height/5;
+    [self addSubview:badgeView];
+    [badgeView show:NO];
+    self.badgeView = badgeView;
+}
+
+- (void)showBadge:(BOOL)show text:(NSString *)text {
+    JHBadgeView *badgeView = (JHBadgeView *)self.badgeView;
+    [badgeView show:show badgeText:text];
 }
 
 @end

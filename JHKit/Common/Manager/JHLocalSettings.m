@@ -31,7 +31,7 @@ static JHLocalSettings *_sharedInstance = nil;
     return nil;
 }
 
-- (id)settingsForKey:(NSString *)key {
+- (id)getSettingsForKey:(NSString *)key {
     return [[NSUserDefaults standardUserDefaults] objectForKey:key];
 }
 
@@ -48,7 +48,7 @@ static JHLocalSettings *_sharedInstance = nil;
 }
 
 - (BOOL)hasSettingForKey:(NSString *)key {
-    return [self settingsForKey:key]? YES : NO;
+    return [self getSettingsForKey:key] ? YES : NO;
 }
 
 @end

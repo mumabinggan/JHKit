@@ -35,4 +35,12 @@
 
 }
 
++ (CGFloat)heightWithData:(JHObject *)data {
+    return 0.0f;
+}
+
++ (CGFloat)heightWithArray:(NSArray *)data {
+    return 0.0f;
+}
+
 @end

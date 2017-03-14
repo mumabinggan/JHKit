@@ -26,7 +26,7 @@ static NSTimeInterval kREQUEST_TIMEOUT_INTERVAL = 30;
 }
 
 - (NSString *)url {
-    return [NSString stringWithFormat:@"%@://%@:%@%@%@", [self scheme], [self host], [self port], [self path], [self api]];
+    return [NSString stringWithFormat:@"%@://%@:%@%@%@%@", [self scheme], [self host], [self port], [self path], [self api], [self apiSuffix]];
 }
 
 - (NSString *)scheme {
@@ -46,6 +46,10 @@ static NSTimeInterval kREQUEST_TIMEOUT_INTERVAL = 30;
 }
 
 - (NSString *)api {
+    return @"";
+}
+
+- (NSString *)apiSuffix {
     return @"";
 }
 

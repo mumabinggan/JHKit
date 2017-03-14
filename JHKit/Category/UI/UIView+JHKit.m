@@ -160,16 +160,18 @@
 }
 
 - (void)addBadge {
-    JHBadgeView *badgeView = [[JHBadgeView alloc] initWithFrame:CGRectMake(0, 0, 18, 18) radius:9.0];
-    badgeView.backgroundColor = kHRGB(0x5677FC);
-    badgeView.layer.borderWidth = 2.0f;
-    badgeView.layer.borderColor = kWhiteColor.CGColor;
-    badgeView.layer.cornerRadius = badgeView.radius;
-    badgeView.x = self.width/3;
-    badgeView.y = - self.height/5;
-    [self addSubview:badgeView];
-    [badgeView show:NO];
-    self.badgeView = badgeView;
+    if (!self.badgeView) {
+        JHBadgeView *badgeView = [[JHBadgeView alloc] initWithFrame:CGRectMake(0, 0, 18, 18) radius:9.0];
+        badgeView.backgroundColor = kHRGB(0x5677FC);
+        badgeView.layer.borderWidth = 2.0f;
+        badgeView.layer.borderColor = kWhiteColor.CGColor;
+        badgeView.layer.cornerRadius = badgeView.radius;
+        badgeView.x = self.width/3;
+        badgeView.y = - self.height/5;
+        [self addSubview:badgeView];
+        [badgeView show:NO];
+        self.badgeView = badgeView;
+    }
 }
 
 - (void)showBadge:(BOOL)show text:(NSString *)text {

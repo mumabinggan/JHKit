@@ -65,4 +65,8 @@
     return _difRadius;
 }
 
+- (void)showWithData:(JHObject *)data {
+    
+}
+
 @end

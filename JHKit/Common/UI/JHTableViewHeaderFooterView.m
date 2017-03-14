@@ -18,6 +18,10 @@
     return self;
 }
 
+- (void)loadSubviews {
+    
+}
+
 - (void)showWithData:(JHObject *)data {
 
 }

@@ -22,4 +22,8 @@
 
 - (void)showWithArray:(NSArray *)array;
 
++ (CGFloat)heightWithData:(JHObject *)data;
+
++ (CGFloat)heightWithArray:(NSArray *)data;
+
 @end

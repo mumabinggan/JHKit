@@ -128,6 +128,8 @@
 		BE83BAFE1E23DECB002F3BCC /* JHCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BE83BAFC1E23DECB002F3BCC /* JHCollectionViewLayout.m */; };
 		BE99E7AB1E1C9DAA00210546 /* JHRefreshTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = BE99E7A91E1C9DAA00210546 /* JHRefreshTableView.h */; };
 		BE99E7AC1E1C9DAA00210546 /* JHRefreshTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE99E7AA1E1C9DAA00210546 /* JHRefreshTableView.m */; };
+		BE9F935F1E6B26EB0051B054 /* JHWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BE9F935D1E6B26EB0051B054 /* JHWebViewController.h */; };
+		BE9F93601E6B26EB0051B054 /* JHWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9F935E1E6B26EB0051B054 /* JHWebViewController.m */; };
 		BEB2D92F1DFBE75500F2E74B /* UIButton+JHKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB2D92D1DFBE75500F2E74B /* UIButton+JHKit.h */; };
 		BEB2D9301DFBE75500F2E74B /* UIButton+JHKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB2D92E1DFBE75500F2E74B /* UIButton+JHKit.m */; };
 		BEB2D9651DFBF2AA00F2E74B /* JHScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB2D9631DFBF2AA00F2E74B /* JHScrollView.h */; };
@@ -448,6 +450,8 @@
 		BE83BAFC1E23DECB002F3BCC /* JHCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHCollectionViewLayout.m; sourceTree = "<group>"; };
 		BE99E7A91E1C9DAA00210546 /* JHRefreshTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHRefreshTableView.h; sourceTree = "<group>"; };
 		BE99E7AA1E1C9DAA00210546 /* JHRefreshTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHRefreshTableView.m; sourceTree = "<group>"; };
+		BE9F935D1E6B26EB0051B054 /* JHWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHWebViewController.h; sourceTree = "<group>"; };
+		BE9F935E1E6B26EB0051B054 /* JHWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHWebViewController.m; sourceTree = "<group>"; };
 		BEB2D92D1DFBE75500F2E74B /* UIButton+JHKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+JHKit.h"; sourceTree = "<group>"; };
 		BEB2D92E1DFBE75500F2E74B /* UIButton+JHKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JHKit.m"; sourceTree = "<group>"; };
 		BEB2D9631DFBF2AA00F2E74B /* JHScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHScrollView.h; sourceTree = "<group>"; };
@@ -550,6 +554,8 @@
 		BE62D5E61DF8DD78004510A5 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				BE9F935D1E6B26EB0051B054 /* JHWebViewController.h */,
+				BE9F935E1E6B26EB0051B054 /* JHWebViewController.m */,
 				BE62D5E71DF8DD78004510A5 /* JHNavigationController.h */,
 				BE62D5E81DF8DD78004510A5 /* JHNavigationController.m */,
 				BE62D5E91DF8DD78004510A5 /* JHObject.h */,
@@ -971,6 +977,7 @@
 				BE62D6A11DF8DD78004510A5 /* JHStructType.h in Headers */,
 				BE62D6821DF8DD78004510A5 /* NSObject+JHKit.h in Headers */,
 				BE62D6691DF8DD78004510A5 /* JHImageView.h in Headers */,
+				BE9F935F1E6B26EB0051B054 /* JHWebViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1301,6 +1308,7 @@
 				BE62D68B1DF8DD78004510A5 /* UIImageView+JHKit.m in Sources */,
 				BE62D66A1DF8DD78004510A5 /* JHImageView.m in Sources */,
 				BEB2D9301DFBE75500F2E74B /* UIButton+JHKit.m in Sources */,
+				BE9F93601E6B26EB0051B054 /* JHWebViewController.m in Sources */,
 				BE62D65C1DF8DD78004510A5 /* JHNetworkManager.m in Sources */,
 				BE62D6851DF8DD78004510A5 /* NSString+JHKit.m in Sources */,
 				BED1D96A1E419BE000B9AE82 /* JHXMLParserManager.m in Sources */,

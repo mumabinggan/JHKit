@@ -36,4 +36,6 @@
         borderColor:(UIColor *)borderColor
     backgroundColor:(UIColor *)backgroundColor;
 
+- (void)showWithData:(JHObject *)data;
+
 @end

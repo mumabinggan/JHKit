@@ -10,4 +10,12 @@
 
 @implementation JHCollectionView
 
+- (id)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.backgroundColor = kClearColor;
+    }
+    return self;
+}
+
 @end

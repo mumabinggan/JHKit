@@ -143,6 +143,19 @@ static NSString *RetryViewKey = nil;
     
 }
 
+- (void)stopRefreshing:(UIScrollView *)scrollView refresh:(BOOL)refresh pulling:(BOOL)pulling {
+    if (pulling) {
+        if (refresh) {
+            [scrollView stopHeaderRefreshing];
+        }
+        else {
+            [scrollView stopFooterRefreshing];
+        }
+    } else {
+        [self removeLoadingView];
+    }
+}
+
 @end
 
 @implementation UIViewController (Network)

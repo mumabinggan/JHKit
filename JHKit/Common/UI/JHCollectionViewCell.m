@@ -10,6 +10,18 @@
 
 @implementation JHCollectionViewCell
 
+- (id)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self loadSubviews];
+    }
+    return self;
+}
+
+- (void)loadSubviews {
+    
+}
+
 - (void)showWithData:(JHObject *)data {
     _data = data;
 }

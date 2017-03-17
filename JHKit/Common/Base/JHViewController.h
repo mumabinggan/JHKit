@@ -79,4 +79,3 @@ typedef NS_ENUM(NSInteger, JHNotificationType) {
 - (void)applicationWillTerminate:(NSNotification *)notification;
 
 @end
-

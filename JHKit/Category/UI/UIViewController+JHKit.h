@@ -69,6 +69,8 @@
 
 - (void)removeRetryView;
 
+- (void)stopRefreshing:(UIScrollView *)scrollView refresh:(BOOL)refresh pulling:(BOOL)pulling;
+
 @end
 
 @interface UIViewController (Network)

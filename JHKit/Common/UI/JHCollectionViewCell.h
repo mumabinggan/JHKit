@@ -15,6 +15,8 @@
     JHObject *_data;
 }
 
+- (void)loadSubviews;
+
 - (void)showWithData:(JHObject *)data;
 
 @end

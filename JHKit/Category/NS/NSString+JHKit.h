@@ -57,4 +57,6 @@
 
 - (NSAttributedString *)addMidline;
 
+- (NSArray*)rangesArrayOfString:(NSString*)str;
+
 @end

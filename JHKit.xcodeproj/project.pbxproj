@@ -124,6 +124,8 @@
 		BE62E5A91DF95F09004510A5 /* SDVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62E5A51DF95F09004510A5 /* SDVersion.h */; };
 		BE62E5AA1DF95F09004510A5 /* SDiOSVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62E5A71DF95F09004510A5 /* SDiOSVersion.h */; };
 		BE62E5AB1DF95F09004510A5 /* SDiOSVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62E5A81DF95F09004510A5 /* SDiOSVersion.m */; };
+		BE63A6911E7B8F8A00F77282 /* UILabel+JHKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BE63A68F1E7B8F8A00F77282 /* UILabel+JHKit.h */; };
+		BE63A6921E7B8F8A00F77282 /* UILabel+JHKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BE63A6901E7B8F8A00F77282 /* UILabel+JHKit.m */; };
 		BE83BAFD1E23DECB002F3BCC /* JHCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = BE83BAFB1E23DECB002F3BCC /* JHCollectionViewLayout.h */; };
 		BE83BAFE1E23DECB002F3BCC /* JHCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BE83BAFC1E23DECB002F3BCC /* JHCollectionViewLayout.m */; };
 		BE99E7AB1E1C9DAA00210546 /* JHRefreshTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = BE99E7A91E1C9DAA00210546 /* JHRefreshTableView.h */; };
@@ -446,6 +448,8 @@
 		BE62E5A51DF95F09004510A5 /* SDVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDVersion.h; path = SDVersion/SDVersion.h; sourceTree = "<group>"; };
 		BE62E5A71DF95F09004510A5 /* SDiOSVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDiOSVersion.h; sourceTree = "<group>"; };
 		BE62E5A81DF95F09004510A5 /* SDiOSVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDiOSVersion.m; sourceTree = "<group>"; };
+		BE63A68F1E7B8F8A00F77282 /* UILabel+JHKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+JHKit.h"; sourceTree = "<group>"; };
+		BE63A6901E7B8F8A00F77282 /* UILabel+JHKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+JHKit.m"; sourceTree = "<group>"; };
 		BE83BAFB1E23DECB002F3BCC /* JHCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCollectionViewLayout.h; sourceTree = "<group>"; };
 		BE83BAFC1E23DECB002F3BCC /* JHCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHCollectionViewLayout.m; sourceTree = "<group>"; };
 		BE99E7A91E1C9DAA00210546 /* JHRefreshTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHRefreshTableView.h; sourceTree = "<group>"; };
@@ -683,6 +687,8 @@
 				BE62D6341DF8DD78004510A5 /* UIViewController+JHKit.m */,
 				BEB2D92D1DFBE75500F2E74B /* UIButton+JHKit.h */,
 				BEB2D92E1DFBE75500F2E74B /* UIButton+JHKit.m */,
+				BE63A68F1E7B8F8A00F77282 /* UILabel+JHKit.h */,
+				BE63A6901E7B8F8A00F77282 /* UILabel+JHKit.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -959,6 +965,7 @@
 				BE62D69D1DF8DD78004510A5 /* JHMacro.h in Headers */,
 				BE62D6631DF8DD78004510A5 /* JHButton.h in Headers */,
 				BE62D6861DF8DD78004510A5 /* UIColor+JHKit.h in Headers */,
+				BE63A6911E7B8F8A00F77282 /* UILabel+JHKit.h in Headers */,
 				BE62D65F1DF8DD78004510A5 /* JHAlert.h in Headers */,
 				BE62D6711DF8DD78004510A5 /* JHTableView.h in Headers */,
 				BE62D6771DF8DD78004510A5 /* JHTextView.h in Headers */,
@@ -1306,6 +1313,7 @@
 				BE62D6521DF8DD78004510A5 /* JHViewController.m in Sources */,
 				BE99E7AC1E1C9DAA00210546 /* JHRefreshTableView.m in Sources */,
 				BE62D68B1DF8DD78004510A5 /* UIImageView+JHKit.m in Sources */,
+				BE63A6921E7B8F8A00F77282 /* UILabel+JHKit.m in Sources */,
 				BE62D66A1DF8DD78004510A5 /* JHImageView.m in Sources */,
 				BEB2D9301DFBE75500F2E74B /* UIButton+JHKit.m in Sources */,
 				BE9F93601E6B26EB0051B054 /* JHWebViewController.m in Sources */,

@@ -16,6 +16,7 @@
 #import "UIViewController+JHKit.h"
 #import "UIScrollView+JHKit.h"
 #import "UIButton+JHKit.h"
+#import "UILabel+JHKit.h"
 
 #import "NSObject+JHKit.h"
 #import "NSString+JHKit.h"

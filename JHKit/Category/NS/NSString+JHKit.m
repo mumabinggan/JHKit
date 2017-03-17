@@ -186,4 +186,24 @@
     return [[NSAttributedString alloc] initWithString:[NSString safeString:self] attributes:attribtDic];;
 }
 
+- (NSArray*)rangesArrayOfString:(NSString*)str {
+    NSMutableArray* rangeArray = [[NSMutableArray alloc] init];
+    NSMutableString* tmpStr = [[NSMutableString alloc] initWithString:self];
+    NSRange range;
+    while (((range = [tmpStr rangeOfString:str]).location != NSNotFound)) {
+        [rangeArray addObject:[NSValue valueWithRange:range]];
+        NSRange newRange = NSMakeRange(0, range.location+range.length);
+        [tmpStr deleteCharactersInRange:newRange];
+    }
+    
+    for (int num = 0; num < rangeArray.count-1 && rangeArray.count > 0; ++num) {
+        NSValue* value1 = rangeArray[num];
+        NSValue* value2 = rangeArray[num+1];
+        NSRange range = NSMakeRange(value2.rangeValue.location + value1.rangeValue.location+value1.rangeValue.length, value2.rangeValue.length);
+        [rangeArray replaceObjectAtIndex:num+1 withObject:[NSValue valueWithRange:range]];
+    }
+    
+    return rangeArray;
+}
+
 @end

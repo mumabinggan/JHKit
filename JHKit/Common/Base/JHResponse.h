@@ -10,7 +10,8 @@
 
 @interface JHResponse : JHObject
 
-@property (nonatomic, strong) NSString *code;
+//@property (nonatomic, strong) NSString *code;
+@property (nonatomic, assign) NSInteger code;
 
 @property (nonatomic, strong) NSString *message;
 

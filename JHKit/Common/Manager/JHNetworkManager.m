@@ -68,7 +68,7 @@ static JHNetworkManager *_sharedInstance = nil;
 - (void)get:(JHRequest *)request forResponseClass:(Class)clazz progress:(void (^)(NSProgress *))progress success:(void (^)(JHResponse *))success failure:(void (^)(NSError *))failure {
     
     [self prepareHttpHeaders:request];
-    
+
     __weak typeof(self) weakSelf = self;
     
     [_url2Tasks setObject:
@@ -78,7 +78,7 @@ static JHNetworkManager *_sharedInstance = nil;
         }
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (success) {
-            JHResponse *response = [[clazz alloc] initWithDictionary:responseObject];
+            JHResponse *response = [[clazz alloc] initWithData:responseObject error:nil];
             if (response && request.enableResponseObject) {
                 [response setValue:responseObject forKey:@"responseObject"];
             }
@@ -104,7 +104,7 @@ static JHNetworkManager *_sharedInstance = nil;
 - (void)post:(JHRequest *)request forResponseClass:(Class)clazz progress:(void (^)(NSProgress *))progress success:(void (^)(JHResponse *))success failure:(void (^)(NSError *))failure {
     
     [self prepareHttpHeaders:request];
-    
+    [_sessionManager.requestSerializer setValue:@"application/x-www-form-urlencoded; charset=UTF-8" forHTTPHeaderField:@"Content-Type"];
     __weak typeof(self) weakSelf = self;
     
     [_url2Tasks setObject:
@@ -114,7 +114,7 @@ static JHNetworkManager *_sharedInstance = nil;
         }
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (success) {
-            JHResponse *response = [[clazz alloc] initWithDictionary:responseObject];
+            JHResponse *response = [[clazz alloc] initWithData:responseObject error:nil];
             if (response && request.enableResponseObject) {
                 [response setValue:responseObject forKey:@"responseObject"];
             }
@@ -200,11 +200,13 @@ static JHNetworkManager *_sharedInstance = nil;
 }
 
 - (void)prepareHttpHeaders:(JHRequest *)request {
-    AFJSONRequestSerializer *requestSerializer = [AFJSONRequestSerializer serializer];
-    AFJSONResponseSerializer *responseSerializer = [AFJSONResponseSerializer serializer];
+    AFHTTPRequestSerializer *requestSerializer = [AFHTTPRequestSerializer serializer];
+    AFHTTPResponseSerializer *responseSerializer = [AFHTTPResponseSerializer serializer];
+    //[requestSerializer setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+    //responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"text/plain", nil];
+    //responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html; charset=UTF-8",@"text/plain", nil];
     
     [requestSerializer setTimeoutInterval:[request timeoutInterval]];
-    
     NSDictionary *headers = [request headers];
     if (headers) {
         for (NSInteger i = 0, n = headers.allKeys.count; i < n; ++ i) {
@@ -216,7 +218,6 @@ static JHNetworkManager *_sharedInstance = nil;
     if (request.acceptContentTypes) {
         [responseSerializer setAcceptableContentTypes:request.acceptContentTypes];
     }
-    
     _sessionManager.requestSerializer = requestSerializer;
     _sessionManager.responseSerializer = responseSerializer;
 }
@@ -355,6 +356,69 @@ static JHNetworkManager *_sharedInstance = nil;
 - (void)handleParserJson:(id)result class:(Class)clazz{
     
 }
+
+-(void)networkingGetMethod:(NSDictionary *)parameters urlName:(NSString *)urlName
+{
+    return;
+    urlName = @"http://delong6688.develop.weygo.com/appservice/catalogSearch/topMenus?sign=15384456e8e84108e338256c3a8a98c8";
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    //申明返回的结果是json类型
+    manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    //申明请求的数据是json类型
+    manager.requestSerializer=[AFJSONRequestSerializer serializer];
+    //如果报接受类型不一致请替换一致text/html或别的
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"text/plain", nil];
+    [manager GET:urlName parameters:@{} progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        //
+        NSLog(@"----success---%@", responseObject);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        //failureBlock(error);
+        NSLog(@"----fail---");
+    }];
+    
+}
+
+- (void)testPost {
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.requestSerializer = [AFHTTPRequestSerializer serializer];
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    // 设置超时时间
+    [manager.requestSerializer willChangeValueForKey:@"timeoutInterval"];
+    manager.requestSerializer.timeoutInterval = 20.f;
+    [manager.requestSerializer didChangeValueForKey:@"timeoutInterval"];
+    
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/json",@"text/xml",@"text/html", nil ];
+    NSString *url = @"http://delong6688.develop.weygo.com/appservice/pages/content?";
+    NSDictionary *params = @{@"menuId":@(19), @"sign":@"943419793cfeef22139a9e64936ace24"};
+    // post请求
+    [manager POST:url parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+        
+    } progress:^(NSProgress * _Nonnull uploadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        // 成功，关闭网络指示器
+        NSLog(@"-----%@----", responseObject);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        // 失败，关闭网络指示器
+        NSLog(@"-----ERROR---%@", error);
+    }];
+}
+
+//    AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
+//    session.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", nil];
+//    session.requestSerializer = [AFHTTPRequestSerializer serializer];
+//    
+//    NSDictionary *params = @{@"menuId":@(19)};
+//    
+//    [session POST:@"http://delong6688.develop.weygo.com/appservice/pages/content?sign=943419793cfeef22139a9e64936ace24" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        
+//        NSLog(@"%@",responseObject);
+//        
+//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//        
+//        NSLog(@"%@",error);
+//        
+//    }];
 
 @end
 

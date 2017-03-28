@@ -330,6 +330,7 @@
 /* Begin PBXFileReference section */
 		BE1BBA301E4B2B480008BD68 /* JHTableViewHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTableViewHeaderFooterView.h; sourceTree = "<group>"; };
 		BE1BBA311E4B2B480008BD68 /* JHTableViewHeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTableViewHeaderFooterView.m; sourceTree = "<group>"; };
+		BE5210051E8911E1004BD34E /* JHConstants_Other.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHConstants_Other.h; sourceTree = "<group>"; };
 		BE62D5CA1DF8DAFD004510A5 /* JHKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JHKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE62D5CD1DF8DAFD004510A5 /* JHKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHKit.h; sourceTree = "<group>"; };
 		BE62D5CE1DF8DAFD004510A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -717,6 +718,7 @@
 				BE62D63F1DF8DD78004510A5 /* JHConstants_Notification.h */,
 				BE62D6401DF8DD78004510A5 /* JHConstants_OpenUrl.h */,
 				BE62D6411DF8DD78004510A5 /* JHConstants_Version.h */,
+				BE5210051E8911E1004BD34E /* JHConstants_Other.h */,
 			);
 			path = Constants;
 			sourceTree = "<group>";

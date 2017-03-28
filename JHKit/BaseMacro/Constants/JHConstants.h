@@ -19,5 +19,6 @@
 #import "JHConstants_AppInfo.h"
 #import "JHConstants_Version.h"
 #import "JHConstants_OpenUrl.h"
+#import "JHConstants_Other.h"
 
 #endif /* JHConstants_h */

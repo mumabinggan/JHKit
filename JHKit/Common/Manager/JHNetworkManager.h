@@ -59,4 +59,8 @@
          success:(void (^)(JHResponse *))success
          failure:(void (^)(NSError *))failure;
 
+-(void)networkingGetMethod:(NSDictionary *)parameters urlName:(NSString *)urlName;
+
+- (void)testPost;
+
 @end

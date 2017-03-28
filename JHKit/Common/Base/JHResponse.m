@@ -11,10 +11,7 @@
 @implementation JHResponse
 
 - (BOOL)success {
-    if (![NSString isNullOrEmpty:_code]) {
-        return _code.intValue == 1;
-    }
-    return NO;
+    return _code == 1;
 }
 
 @end

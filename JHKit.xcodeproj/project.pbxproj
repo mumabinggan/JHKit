@@ -147,6 +147,8 @@
 		BEF685471E31B972003B745B /* JHAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF685451E31B972003B745B /* JHAnimatedImageView.m */; };
 		BEF6854A1E31BA60003B745B /* JHAnimatedImage.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF685481E31BA60003B745B /* JHAnimatedImage.h */; };
 		BEF6854B1E31BA60003B745B /* JHAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF685491E31BA60003B745B /* JHAnimatedImage.m */; };
+		BEF8ED6C1E8AAF3A00E15C8F /* JHPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF8ED6A1E8AAF3900E15C8F /* JHPageControl.h */; };
+		BEF8ED6D1E8AAF3A00E15C8F /* JHPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF8ED6B1E8AAF3900E15C8F /* JHPageControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -473,6 +475,8 @@
 		BEF685451E31B972003B745B /* JHAnimatedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHAnimatedImageView.m; sourceTree = "<group>"; };
 		BEF685481E31BA60003B745B /* JHAnimatedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHAnimatedImage.h; sourceTree = "<group>"; };
 		BEF685491E31BA60003B745B /* JHAnimatedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHAnimatedImage.m; sourceTree = "<group>"; };
+		BEF8ED6A1E8AAF3900E15C8F /* JHPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHPageControl.h; sourceTree = "<group>"; };
+		BEF8ED6B1E8AAF3900E15C8F /* JHPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHPageControl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -640,6 +644,8 @@
 				BEF685451E31B972003B745B /* JHAnimatedImageView.m */,
 				BEF685481E31BA60003B745B /* JHAnimatedImage.h */,
 				BEF685491E31BA60003B745B /* JHAnimatedImage.m */,
+				BEF8ED6A1E8AAF3900E15C8F /* JHPageControl.h */,
+				BEF8ED6B1E8AAF3900E15C8F /* JHPageControl.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -917,6 +923,7 @@
 				BE62E1B91DF912AC004510A5 /* TWRefresh.h in Headers */,
 				BE62D67E1DF8DD78004510A5 /* NSData+JHKit.h in Headers */,
 				BE62D68A1DF8DD78004510A5 /* UIImageView+JHKit.h in Headers */,
+				BEF8ED6C1E8AAF3A00E15C8F /* JHPageControl.h in Headers */,
 				BE62D69B1DF8DD78004510A5 /* JHConstants_OpenUrl.h in Headers */,
 				BE62D6671DF8DD78004510A5 /* JHCollectionViewCell.h in Headers */,
 				BE62D69F1DF8DD78004510A5 /* JHDataType.h in Headers */,
@@ -1318,6 +1325,7 @@
 				BE63A6921E7B8F8A00F77282 /* UILabel+JHKit.m in Sources */,
 				BE62D66A1DF8DD78004510A5 /* JHImageView.m in Sources */,
 				BEB2D9301DFBE75500F2E74B /* UIButton+JHKit.m in Sources */,
+				BEF8ED6D1E8AAF3A00E15C8F /* JHPageControl.m in Sources */,
 				BE9F93601E6B26EB0051B054 /* JHWebViewController.m in Sources */,
 				BE62D65C1DF8DD78004510A5 /* JHNetworkManager.m in Sources */,
 				BE62D6851DF8DD78004510A5 /* NSString+JHKit.m in Sources */,

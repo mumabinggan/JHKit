@@ -78,7 +78,14 @@ static JHNetworkManager *_sharedInstance = nil;
         }
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (success) {
-            JHResponse *response = [[clazz alloc] initWithData:responseObject error:nil];
+            NSError *error = nil;
+            JHResponse *response = [[clazz alloc] initWithData:responseObject error:&error];
+            if (!response) {
+                NSString *sss = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
+                NSLog(@"----response = %@---", sss);
+                response = [[clazz alloc] initWithDictionary:responseObject error:nil];
+                NSLog(@"----response---");
+            }
             if (response && request.enableResponseObject) {
                 [response setValue:responseObject forKey:@"responseObject"];
             }

@@ -105,7 +105,6 @@
 		BE62E1921DF90F25004510A5 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE62E1851DF90F14004510A5 /* AFNetworking.framework */; };
 		BE62E1931DF90F2B004510A5 /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE62E1771DF90F0D004510A5 /* FMDB.framework */; };
 		BE62E1941DF90F31004510A5 /* IQKeyboardManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE62E1621DF90F06004510A5 /* IQKeyboardManager.framework */; };
-		BE62E1951DF90F37004510A5 /* JSONModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE62E15B1DF90EFD004510A5 /* JSONModel.framework */; };
 		BE62E1961DF90F3E004510A5 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE62E1551DF90EF3004510A5 /* MBProgressHUD.framework */; };
 		BE62E1971DF90F44004510A5 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE62E1461DF90EEC004510A5 /* SDWebImage.framework */; };
 		BE62E1B41DF912AC004510A5 /* TWRefreshIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62E1A51DF912AC004510A5 /* TWRefreshIndicator.h */; };
@@ -149,6 +148,7 @@
 		BEF6854B1E31BA60003B745B /* JHAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF685491E31BA60003B745B /* JHAnimatedImage.m */; };
 		BEF8ED6C1E8AAF3A00E15C8F /* JHPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF8ED6A1E8AAF3900E15C8F /* JHPageControl.h */; };
 		BEF8ED6D1E8AAF3A00E15C8F /* JHPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF8ED6B1E8AAF3900E15C8F /* JHPageControl.m */; };
+		BEFD5F201E8D4AEB008F067E /* JSONModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEFD5F1F1E8D4AB3008F067E /* JSONModel.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -214,13 +214,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 1D104D7A1ACA36CC00973364;
 			remoteInfo = "MBProgressHUD Framework";
-		};
-		BE62E15A1DF90EFD004510A5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BE62E1561DF90EFD004510A5 /* JSONModel.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 92C9BC3D1B19A51100D79B06;
-			remoteInfo = JSONModel;
 		};
 		BE62E1611DF90F06004510A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -327,6 +320,13 @@
 			remoteGlobalIDString = 2987B0AE1BC408A200179A4C;
 			remoteInfo = "AFNetworking tvOS Tests";
 		};
+		BEFD5F1E1E8D4AB3008F067E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEFD5F1A1E8D4AB3008F067E /* JSONModel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 92C9BC3D1B19A51100D79B06;
+			remoteInfo = JSONModel;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -431,7 +431,6 @@
 		BE62D6471DF8DD78004510A5 /* JHStructType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHStructType.h; sourceTree = "<group>"; };
 		BE62E1381DF90EEC004510A5 /* SDWebImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDWebImage.xcodeproj; path = SDWebImage/SDWebImage.xcodeproj; sourceTree = "<group>"; };
 		BE62E14D1DF90EF3004510A5 /* MBProgressHUD.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MBProgressHUD.xcodeproj; path = MBProgressHUD/MBProgressHUD.xcodeproj; sourceTree = "<group>"; };
-		BE62E1561DF90EFD004510A5 /* JSONModel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSONModel.xcodeproj; path = JsonModel/JSONModel.xcodeproj; sourceTree = "<group>"; };
 		BE62E15C1DF90F06004510A5 /* IQKeyboardManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IQKeyboardManager.xcodeproj; path = IQKeyboardManager/IQKeyboardManager.xcodeproj; sourceTree = "<group>"; };
 		BE62E1651DF90F0D004510A5 /* fmdb.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = fmdb.xcodeproj; path = FMDB/fmdb.xcodeproj; sourceTree = "<group>"; };
 		BE62E17A1DF90F14004510A5 /* AFNetworking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AFNetworking.xcodeproj; path = AFNetworking/AFNetworking.xcodeproj; sourceTree = "<group>"; };
@@ -477,6 +476,7 @@
 		BEF685491E31BA60003B745B /* JHAnimatedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHAnimatedImage.m; sourceTree = "<group>"; };
 		BEF8ED6A1E8AAF3900E15C8F /* JHPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHPageControl.h; sourceTree = "<group>"; };
 		BEF8ED6B1E8AAF3900E15C8F /* JHPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHPageControl.m; sourceTree = "<group>"; };
+		BEFD5F1A1E8D4AB3008F067E /* JSONModel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSONModel.xcodeproj; path = JsonModel/JSONModel.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -484,10 +484,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEFD5F201E8D4AEB008F067E /* JSONModel.framework in Frameworks */,
 				BED1D8D81E4192C300B9AE82 /* libxml2.tbd in Frameworks */,
 				BE62E1971DF90F44004510A5 /* SDWebImage.framework in Frameworks */,
 				BE62E1961DF90F3E004510A5 /* MBProgressHUD.framework in Frameworks */,
-				BE62E1951DF90F37004510A5 /* JSONModel.framework in Frameworks */,
 				BE62E1941DF90F31004510A5 /* IQKeyboardManager.framework in Frameworks */,
 				BE62E1931DF90F2B004510A5 /* FMDB.framework in Frameworks */,
 				BE62E1921DF90F25004510A5 /* AFNetworking.framework in Frameworks */,
@@ -743,12 +743,12 @@
 		BE62DA201DF90ED3004510A5 /* Submodules */ = {
 			isa = PBXGroup;
 			children = (
+				BEFD5F1A1E8D4AB3008F067E /* JSONModel.xcodeproj */,
 				BED1D9021E41954800B9AE82 /* GDataXML_HTML */,
 				BE62E4E11DF95EF1004510A5 /* SDVersion */,
 				BE62E17A1DF90F14004510A5 /* AFNetworking.xcodeproj */,
 				BE62E1651DF90F0D004510A5 /* fmdb.xcodeproj */,
 				BE62E15C1DF90F06004510A5 /* IQKeyboardManager.xcodeproj */,
-				BE62E1561DF90EFD004510A5 /* JSONModel.xcodeproj */,
 				BE62E14D1DF90EF3004510A5 /* MBProgressHUD.xcodeproj */,
 				BE62E1381DF90EEC004510A5 /* SDWebImage.xcodeproj */,
 			);
@@ -773,14 +773,6 @@
 			children = (
 				BE62E1531DF90EF3004510A5 /* libMBProgressHUD.a */,
 				BE62E1551DF90EF3004510A5 /* MBProgressHUD.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		BE62E1571DF90EFD004510A5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BE62E15B1DF90EFD004510A5 /* JSONModel.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -907,6 +899,14 @@
 				BED1D9451E41955700B9AE82 /* GDataXMLNode.m */,
 			);
 			path = GDataXML_HTML;
+			sourceTree = "<group>";
+		};
+		BEFD5F1B1E8D4AB3008F067E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEFD5F1F1E8D4AB3008F067E /* JSONModel.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1083,8 +1083,8 @@
 					ProjectRef = BE62E15C1DF90F06004510A5 /* IQKeyboardManager.xcodeproj */;
 				},
 				{
-					ProductGroup = BE62E1571DF90EFD004510A5 /* Products */;
-					ProjectRef = BE62E1561DF90EFD004510A5 /* JSONModel.xcodeproj */;
+					ProductGroup = BEFD5F1B1E8D4AB3008F067E /* Products */;
+					ProjectRef = BEFD5F1A1E8D4AB3008F067E /* JSONModel.xcodeproj */;
 				},
 				{
 					ProductGroup = BE62E14E1DF90EF3004510A5 /* Products */;
@@ -1158,13 +1158,6 @@
 			fileType = wrapper.framework;
 			path = MBProgressHUD.framework;
 			remoteRef = BE62E1541DF90EF3004510A5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		BE62E15B1DF90EFD004510A5 /* JSONModel.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = JSONModel.framework;
-			remoteRef = BE62E15A1DF90EFD004510A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		BE62E1621DF90F06004510A5 /* IQKeyboardManager.framework */ = {
@@ -1270,6 +1263,13 @@
 			fileType = wrapper.cfbundle;
 			path = "AFNetworking tvOS Tests.xctest";
 			remoteRef = BE62E1901DF90F14004510A5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BEFD5F1F1E8D4AB3008F067E /* JSONModel.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JSONModel.framework;
+			remoteRef = BEFD5F1E1E8D4AB3008F067E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

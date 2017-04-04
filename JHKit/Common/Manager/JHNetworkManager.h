@@ -63,4 +63,6 @@
 
 - (void)testPost;
 
+- (void)postWithUrl:(NSString *)url body:(NSData *)body showLoading:(BOOL)show success:(void(^)(NSDictionary *response))success failure:(void(^)(NSError *error))failure;
+
 @end

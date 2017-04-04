@@ -108,32 +108,98 @@ static JHNetworkManager *_sharedInstance = nil;
     [_url2Tasks removeObjectForKey:request.url];
 }
 
+//- (void)post:(JHRequest *)request forResponseClass:(Class)clazz progress:(void (^)(NSProgress *))progress success:(void (^)(JHResponse *))success failure:(void (^)(NSError *))failure {
+//    
+//    [self prepareHttpHeaders:request];
+//
+//    __weak typeof(self) weakSelf = self;
+//    
+//    [_url2Tasks setObject:
+//    [_sessionManager POST:request.url parameters:request.parameters progress:^(NSProgress * _Nonnull uploadProgress) {
+//        if (progress) {
+//            progress(uploadProgress);
+//        }
+//    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        if (success) {
+//            JHResponse *response = [[clazz alloc] initWithData:responseObject error:nil];
+//            if (response && request.enableResponseObject) {
+//                [response setValue:responseObject forKey:@"responseObject"];
+//            }
+//            success(response);
+//            [weakSelf handleRequestFailure:request];
+//        }
+//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//        if (failure) {
+//            failure(error);
+//        }
+//        [weakSelf handleRequestFailure:request];
+//    }] forKey:request.url];
+//}
+
 - (void)post:(JHRequest *)request forResponseClass:(Class)clazz progress:(void (^)(NSProgress *))progress success:(void (^)(JHResponse *))success failure:(void (^)(NSError *))failure {
+    // 初始化Request
+    NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:request.url] cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:request.timeoutInterval];
+    // http method
+    [urlRequest setHTTPMethod:@"POST"];
+    // http header
+    [urlRequest addValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+    NSDictionary *parameters = request.parameters;    // http body
+    NSMutableString *paraString = [NSMutableString string];
+    for (NSString *key in [parameters allKeys]) {
+        [paraString appendFormat:@"&%@=%@", key, parameters[key]];
+    }
+    [paraString deleteCharactersInRange:NSMakeRange(0, 1)]; // 删除多余的&号
+    [urlRequest setHTTPBody:[paraString dataUsingEncoding:NSUTF8StringEncoding]];
     
-    [self prepareHttpHeaders:request];
-    [_sessionManager.requestSerializer setValue:@"application/x-www-form-urlencoded; charset=UTF-8" forHTTPHeaderField:@"Content-Type"];
-    __weak typeof(self) weakSelf = self;
-    
-    [_url2Tasks setObject:
-    [_sessionManager POST:request.url parameters:request.parameters progress:^(NSProgress * _Nonnull uploadProgress) {
-        if (progress) {
-            progress(uploadProgress);
-        }
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        if (success) {
-            JHResponse *response = [[clazz alloc] initWithData:responseObject error:nil];
+    // 初始化AFManager
+    AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc] initWithSessionConfiguration: [NSURLSessionConfiguration defaultSessionConfiguration]];
+    AFJSONResponseSerializer *serializer = [AFJSONResponseSerializer serializer];
+    serializer.acceptableContentTypes = [NSSet setWithObjects:
+                                         @"text/plain",
+                                         @"application/json",
+                                         @"text/html", nil];
+    manager.responseSerializer = serializer;
+    WeakSelf;
+    NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:urlRequest uploadProgress:nil downloadProgress:nil completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+        if (error) {
+            // 请求失败
+            NSLog(@"Request failed with reason '%@'", [error localizedDescription]);
+        } else {
+            // 请求成功
+            NSLog(@"Request success with responseObject - /n '%@'", responseObject);
+            JHResponse *response = [[clazz alloc] initWithDictionary:responseObject error:nil];
             if (response && request.enableResponseObject) {
                 [response setValue:responseObject forKey:@"responseObject"];
             }
             success(response);
             [weakSelf handleRequestFailure:request];
         }
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        if (failure) {
-            failure(error);
-        }
-        [weakSelf handleRequestFailure:request];
-    }] forKey:request.url];
+    }];
+    
+    [_url2Tasks setObject:dataTask forKey:request.url];
+    [dataTask resume];
+    
+//    
+//    [_url2Tasks setObject:
+//     [_sessionManager POST:request.url parameters:request.parameters progress:^(NSProgress * _Nonnull uploadProgress) {
+//        if (progress) {
+//            progress(uploadProgress);
+//        }
+//    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        if (success) {
+//            JHResponse *response = [[clazz alloc] initWithData:responseObject error:nil];
+//            if (response && request.enableResponseObject) {
+//                [response setValue:responseObject forKey:@"responseObject"];
+//            }
+//            success(response);
+//            [weakSelf handleRequestFailure:request];
+//        }
+//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//        if (failure) {
+//            failure(error);
+//        }
+//        [weakSelf handleRequestFailure:request];
+//    }] forKey:request.url];
 }
 
 - (void)post:(JHRequest *)request forResponseClass:(Class)clazz progress:(void (^)(NSProgress *))progress parts:(NSArray *)parts success:(void (^)(JHResponse *))success failure:(void (^)(NSError *))failure {
@@ -207,8 +273,9 @@ static JHNetworkManager *_sharedInstance = nil;
 }
 
 - (void)prepareHttpHeaders:(JHRequest *)request {
-    AFHTTPRequestSerializer *requestSerializer = [AFHTTPRequestSerializer serializer];
+    AFJSONRequestSerializer *requestSerializer = [AFJSONRequestSerializer serializer];
     AFHTTPResponseSerializer *responseSerializer = [AFHTTPResponseSerializer serializer];
+    
     //[requestSerializer setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
     //responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"text/plain", nil];
     //responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html; charset=UTF-8",@"text/plain", nil];
@@ -426,6 +493,85 @@ static JHNetworkManager *_sharedInstance = nil;
 //        NSLog(@"%@",error);
 //        
 //    }];
+
+- (void)postWithUrl:(NSString *)url body:(NSData *)body showLoading:(BOOL)show success:(void(^)(NSDictionary *response))success failure:(void(^)(NSError *error))failure
+{
+    __weak id weakSelf = self;
+    NSString *requestUrl = @"http://delong6688.develop.weygo.com/appservice/customer/login?sign=86d7e81d8d79bb54a0626f947de72add";
+    // 初始化Request
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:requestUrl] cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:15.0];
+    // http method
+    [request setHTTPMethod:@"POST"];
+    // http header
+    [request addValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+    NSDictionary *parameters = @{@"username":@"mumabinggan@163.com", @"password":@"123456"};    // http body
+    NSMutableString *paraString = [NSMutableString string];
+    for (NSString *key in [parameters allKeys]) {
+        [paraString appendFormat:@"&%@=%@", key, parameters[key]];
+    }
+    [paraString deleteCharactersInRange:NSMakeRange(0, 1)]; // 删除多余的&号
+    [request setHTTPBody:[paraString dataUsingEncoding:NSUTF8StringEncoding]];
+    
+    // 初始化AFManager
+    AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc] initWithSessionConfiguration: [NSURLSessionConfiguration defaultSessionConfiguration]];
+    AFJSONResponseSerializer *serializer = [AFJSONResponseSerializer serializer];
+    serializer.acceptableContentTypes = [NSSet setWithObjects:
+                                         @"text/plain",
+                                         @"application/json",
+                                         @"text/html", nil];
+    manager.responseSerializer = serializer;
+        
+//    NSError *serializationError = nil;
+//    NSMutableURLRequest *request = [self.requestSerializer requestWithMethod:method URLString:[[NSURL URLWithString:URLString relativeToURL:self.baseURL] absoluteString] parameters:parameters error:&serializationError];
+//    if (serializationError) {
+//        if (failure) {
+//            dispatch_async(self.completionQueue ?: dispatch_get_main_queue(), ^{
+//                failure(nil, serializationError);
+//            });
+//        }
+//        
+//        return nil;
+//    }
+    
+//    __block NSURLSessionDataTask *dataTask = nil;
+//    dataTask = [self dataTaskWithRequest:request
+//                          uploadProgress:uploadProgress
+//                        downloadProgress:downloadProgress
+//                       completionHandler:^(NSURLResponse * __unused response, id responseObject, NSError *error) {
+//                           if (error) {
+//                               if (failure) {
+//                                   failure(dataTask, error);
+//                               }
+//                           } else {
+//                               if (success) {
+//                                   success(dataTask, responseObject);
+//                               }
+//                           }
+//                       }];
+    
+    NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:request uploadProgress:nil downloadProgress:nil completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+        if (error) {
+            // 请求失败
+            NSLog(@"Request failed with reason '%@'", [error localizedDescription]);
+        } else {
+            // 请求成功
+            NSLog(@"Request success with responseObject - /n '%@'", responseObject);
+        }
+    }];
+    
+//    // 构建请求任务
+//    NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+//        if (error) {
+//            // 请求失败
+//            NSLog(@"Request failed with reason '%@'", [error localizedDescription]);
+//        } else {
+//            // 请求成功
+//            NSLog(@"Request success with responseObject - /n '%@'", responseObject);
+//        }
+//    }];
+    // 发起请求
+    [dataTask resume];
+}
 
 @end
 

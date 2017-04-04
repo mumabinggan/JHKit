@@ -1,3 +1,5 @@
+#import "JHPopoverView.h"
+
 @interface JHPopoverView ()
 
 @property (nonatomic, strong) UIDynamicAnimator *animator;
@@ -25,13 +27,13 @@
 }
 
 - (void)show {
-    UIWindow *window = [self window];
+    UIWindow *window = [self keyWindow];
     if (window) {
         [self showInView:window];
     }
 }
 
-- (UIWindow *)window {
+- (UIWindow *)keyWindow {
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
     if (!window) {
         for (NSInteger i = [UIApplication sharedApplication].windows.count - 1; i >= 0; --i) {

@@ -15,14 +15,19 @@
 
 @interface UIViewController (UIAssistants)
 
-// Wanring Actions
-- (void)showWarningMessage:(NSString *)message;
+- (void) showWarningMessage:(NSString *)warningMessage;
 
-- (void)showWarningMessage:(NSString *)message onCompletion:(void(^)())completion;
+- (void) showWarningMessageWithDisplayDelay:(NSString *)warningMessage;
 
-- (void)showWarningMessage:(NSString *)message autoCloseAfter:(double) duration;
+- (void) showWarningMessage:(NSString *)warningMessage autoDisplayAfter:(double)displayDelay;
 
-- (void)showWarningMessage:(NSString *)message autoCloseAfter:(double) duration onCompletion:(void(^)())completion;
+- (void) showWarningMessage:(NSString *)warningMessage onCompletion:(void (^)())completion;
+
+- (void) showWarningMessage:(NSString *)warningMessage autoCloseAfter:(NSInteger)secondsDelay;
+
+- (void) showWarningMessage:(NSString *)warningMessage autoCloseAfter:(double)secondsDelay onCompletion:(void (^)())completion;
+
+- (void) showWarningMessage:(NSString *)warningMessage autoDisplayAfter:(double)displaySecondsDelay autoCloseAfter:(double)secondsDelay onCompletion:(void (^)())completion;
 
 // Alert Actions
 - (void)showAlertMessage:(NSString *)message;

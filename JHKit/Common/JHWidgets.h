@@ -29,5 +29,6 @@
 #import "TWRefreshTableView.h"
 #import "TWRefreshCollectionView.h"
 #import "JHAnimatedImageView.h"
+#import "TWLoadingView.h"
 
 #endif /* JHWidgets_h */

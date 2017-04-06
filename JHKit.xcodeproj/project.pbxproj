@@ -149,6 +149,8 @@
 		BEF8ED6C1E8AAF3A00E15C8F /* JHPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF8ED6A1E8AAF3900E15C8F /* JHPageControl.h */; };
 		BEF8ED6D1E8AAF3A00E15C8F /* JHPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF8ED6B1E8AAF3900E15C8F /* JHPageControl.m */; };
 		BEFD5F201E8D4AEB008F067E /* JSONModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEFD5F1F1E8D4AB3008F067E /* JSONModel.framework */; };
+		BEFEC32E1E963705002FCF1F /* TWLoadingView.h in Headers */ = {isa = PBXBuildFile; fileRef = BEFEC32C1E963705002FCF1F /* TWLoadingView.h */; };
+		BEFEC32F1E963705002FCF1F /* TWLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFEC32D1E963705002FCF1F /* TWLoadingView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -477,6 +479,8 @@
 		BEF8ED6A1E8AAF3900E15C8F /* JHPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHPageControl.h; sourceTree = "<group>"; };
 		BEF8ED6B1E8AAF3900E15C8F /* JHPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHPageControl.m; sourceTree = "<group>"; };
 		BEFD5F1A1E8D4AB3008F067E /* JSONModel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSONModel.xcodeproj; path = JsonModel/JSONModel.xcodeproj; sourceTree = "<group>"; };
+		BEFEC32C1E963705002FCF1F /* TWLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWLoadingView.h; sourceTree = "<group>"; };
+		BEFEC32D1E963705002FCF1F /* TWLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWLoadingView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -602,6 +606,8 @@
 		BE62D5FC1DF8DD78004510A5 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				BEFEC32C1E963705002FCF1F /* TWLoadingView.h */,
+				BEFEC32D1E963705002FCF1F /* TWLoadingView.m */,
 				BE62D5FD1DF8DD78004510A5 /* JHActionSheet.h */,
 				BE62D5FE1DF8DD78004510A5 /* JHActionSheet.m */,
 				BE62D5FF1DF8DD78004510A5 /* JHAlert.h */,
@@ -925,6 +931,7 @@
 				BE62D68A1DF8DD78004510A5 /* UIImageView+JHKit.h in Headers */,
 				BEF8ED6C1E8AAF3A00E15C8F /* JHPageControl.h in Headers */,
 				BE62D69B1DF8DD78004510A5 /* JHConstants_OpenUrl.h in Headers */,
+				BEFEC32E1E963705002FCF1F /* TWLoadingView.h in Headers */,
 				BE62D6671DF8DD78004510A5 /* JHCollectionViewCell.h in Headers */,
 				BE62D69F1DF8DD78004510A5 /* JHDataType.h in Headers */,
 				BE62E1BC1DF912AC004510A5 /* TWRefreshTableView.h in Headers */,
@@ -1331,6 +1338,7 @@
 				BE62D6851DF8DD78004510A5 /* NSString+JHKit.m in Sources */,
 				BED1D96A1E419BE000B9AE82 /* JHXMLParserManager.m in Sources */,
 				BE62D64C1DF8DD78004510A5 /* JHObject.m in Sources */,
+				BEFEC32F1E963705002FCF1F /* TWLoadingView.m in Sources */,
 				BE62D6621DF8DD78004510A5 /* JHBadgeView.m in Sources */,
 				BE62D6741DF8DD78004510A5 /* JHTableViewCell.m in Sources */,
 				BE62D6781DF8DD78004510A5 /* JHTextView.m in Sources */,

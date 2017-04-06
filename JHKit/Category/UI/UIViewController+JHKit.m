@@ -12,27 +12,124 @@
 #import "JHRequest.h"
 #import "JHResponse.h"
 
+static CGFloat WARNING_MESSAGE_DELAY = 2.0f;
+static CGFloat WARNING_MESSAGE_DISPLAY_DELAY = 0.2f;
+
 static NSString *LoadingViewKey = nil;
 
 static NSString *RetryViewKey = nil;
 
 @implementation UIViewController (UIAssistants)
 
-// Warning Actions
-- (void)showWarningMessage:(NSString *)message {
-    [self showWarningMessage:message onCompletion:nil];
+- (JHView *)warningView {
+    return objc_getAssociatedObject(self, @"TWWarningView");
 }
 
-- (void)showWarningMessage:(NSString *)message onCompletion:(void (^)())completion {
-    [self showWarningMessage:message autoCloseAfter:2.0 onCompletion:completion];
+- (void)setWarningView:(JHView *)warningView {
+    if (warningView) {
+        objc_setAssociatedObject(self, @"TWWarningView", warningView, OBJC_ASSOCIATION_RETAIN);
+    }
+    else {
+        //objc_removeAssociatedObjects(self);
+        objc_setAssociatedObject(self, @"TWWarningView", nil, OBJC_ASSOCIATION_RETAIN);
+    }
 }
 
-- (void)showWarningMessage:(NSString *)message autoCloseAfter:(double)duration {
-    [self showWarningMessage:message autoCloseAfter:duration onCompletion:nil];
+- (void) showWarningMessage:(NSString *)warningMessage{
+    [self showWarningMessage:warningMessage autoCloseAfter:WARNING_MESSAGE_DELAY];
 }
 
-- (void)showWarningMessage:(NSString *)message autoCloseAfter:(double)duration onCompletion:(void (^)())completion {
-    [[JHAlert sharedAlert] showWarningMessageInView:self.view message:message autoCloseAfter:duration onCompletion:completion];
+- (void) showWarningMessageWithDisplayDelay:(NSString *)warningMessage{
+    [self showWarningMessage:warningMessage autoDisplayAfter:WARNING_MESSAGE_DISPLAY_DELAY autoCloseAfter:WARNING_MESSAGE_DELAY onCompletion:nil];
+}
+
+- (void) showWarningMessage:(NSString *)warningMessage autoDisplayAfter:(double)displayDelay{
+    [self showWarningMessage:warningMessage autoDisplayAfter:displayDelay autoCloseAfter:WARNING_MESSAGE_DELAY onCompletion:nil];
+}
+
+- (void) showWarningMessage:(NSString *)warningMessage onCompletion:(void (^)())completion {
+    [self showWarningMessage:warningMessage autoCloseAfter:WARNING_MESSAGE_DELAY onCompletion:completion];
+}
+
+- (void) showWarningMessage:(NSString *)warningMessage autoCloseAfter:(NSInteger)secondsDelay {
+    [self showWarningMessage:warningMessage autoCloseAfter:secondsDelay onCompletion:nil];
+}
+
+- (void) showWarningMessage:(NSString *)warningMessage autoCloseAfter:(double)secondsDelay onCompletion:(void (^)())completion{
+    [self showWarningMessage:warningMessage autoDisplayAfter:0 autoCloseAfter:secondsDelay onCompletion:completion];
+}
+
+- (void) showWarningMessage:(NSString *)warningMessage autoDisplayAfter:(double)displaySecondsDelay autoCloseAfter:(double)secondsDelay onCompletion:(void (^)())completion{
+    if([NSString isNullOrEmpty:warningMessage]){
+        return;
+    }
+    JHView *_warningView = [self warningView];
+    if (_warningView == nil) {
+        _warningView = [self createWarningView:warningMessage];
+        _warningView.autoresizingMask = UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleRightMargin|UIViewAutoresizingFlexibleBottomMargin|UIViewAutoresizingFlexibleLeftMargin;
+        if (completion) {
+            objc_setAssociatedObject(_warningView, @"warningViewCompletionBlock", completion, OBJC_ASSOCIATION_COPY);
+        }
+        [self setWarningView:_warningView];
+        [self.view addSubview:_warningView];
+    }
+    else{
+        JHLabel *label = (JHLabel*)[_warningView viewWithTag:1000];
+        [label setText:warningMessage];
+    }
+    if (displaySecondsDelay > 0.01){
+        _warningView.hidden = YES;
+        [self performSelector:@selector(displayWarningView:) withObject:_warningView afterDelay:displaySecondsDelay];
+    }
+    
+    if(secondsDelay<=0){
+        secondsDelay = WARNING_MESSAGE_DELAY;
+    } else {
+        secondsDelay += displaySecondsDelay;
+    }
+    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(hideWarningView:) object:_warningView];
+    [self performSelector:@selector(hideWarningView:) withObject:_warningView afterDelay:secondsDelay];
+}
+
+- (JHView *)createWarningView:(NSString *)warningMessage {
+    JHLabel *warningLabel = [[JHLabel alloc]initWithFrame:CGRectMake(16, 10, kDeviceWidth-16*2, 50)];
+    warningLabel.text = warningMessage;
+    warningLabel.textColor = kRGB(225, 225, 225);
+    warningLabel.font = kAppFont(14);
+    warningLabel.tag = 1000;
+    warningLabel.textAlignment = NSTextAlignmentCenter;
+    warningLabel.numberOfLines = 0;
+    [warningLabel sizeToFit];
+    if (warningLabel.frame.size.width<self.view.frame.size.width/2) {
+        CGRect r = warningLabel.frame;
+        r.size.width = MAX(self.view.frame.size.width/3, r.size.width);
+        warningLabel.frame = r;
+    }
+    
+    JHView *_warningView = [[JHView alloc]initWithFrame:CGRectMake((self.view.frame.size.width-warningLabel.frame.size.width-16*2)/2, (self.view.frame.size.height-warningLabel.frame.size.height-20)/2+64/2, warningLabel.frame.size.width+16*2, warningLabel.frame.size.height+20) radius:0.0f];
+    
+    _warningView.radius = (int)_warningView.frame.size.height/2;
+    [_warningView addSubview:warningLabel];
+    warningLabel=nil;
+    _warningView.backgroundColor = kRGBA(45, 45, 45, 0.85);
+    return _warningView;
+}
+
+- (void)displayWarningView:(JHView*)warningView{
+    warningView.hidden = NO;
+}
+
+- (void)hideWarningView:(JHView *)warningView{
+    [UIView animateWithDuration:0.25 animations:^{
+        warningView.layer.opacity = 0.0f;
+    } completion:^(BOOL finished) {
+        [warningView removeFromSuperview];
+        void (^completionBlock)() = objc_getAssociatedObject(warningView, @"warningViewCompletionBlock");
+        if (completionBlock) {
+            completionBlock();
+        }
+        [self setWarningView:nil];
+    }];
 }
 
 // Alert Actions
@@ -172,15 +269,23 @@ static NSString *RetryViewKey = nil;
     if (request.showsLoadingView) {
         [self showsLoadingViewWithRequest:request];
     }
+    __weak JHRequest *weakRequest = request;
+    WeakSelf;
     [[JHNetworkManager sharedManager] get:request forResponseClass:clazz progress:^(NSProgress *downloadProgress) {
         if (progress) {
             progress(downloadProgress);
         }
     } success:^(JHResponse *response) {
+        if (weakRequest.showsLoadingView) {
+            [weakSelf removeLoadingView];
+        }
         if (success != nil) {
             success(response);
         }
     } failure:^(NSError *error) {
+        if (weakRequest.showsLoadingView) {
+            [weakSelf removeLoadingView];
+        }
         if (failure != nil) {
             failure(error);
         }

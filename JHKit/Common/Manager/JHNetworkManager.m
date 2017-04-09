@@ -148,7 +148,9 @@ static JHNetworkManager *_sharedInstance = nil;
     for (NSString *key in [parameters allKeys]) {
         [paraString appendFormat:@"&%@=%@", key, parameters[key]];
     }
-    [paraString deleteCharactersInRange:NSMakeRange(0, 1)]; // 删除多余的&号
+    if (![NSString isNullOrEmpty:paraString]) {
+        [paraString deleteCharactersInRange:NSMakeRange(0, 1)]; // 删除多余的&号
+    }
     [urlRequest setHTTPBody:[paraString dataUsingEncoding:NSUTF8StringEncoding]];
     
     // 初始化AFManager

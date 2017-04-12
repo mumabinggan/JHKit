@@ -60,9 +60,9 @@ static NSString *RetryViewKey = nil;
 }
 
 - (void) showWarningMessage:(NSString *)warningMessage autoDisplayAfter:(double)displaySecondsDelay autoCloseAfter:(double)secondsDelay onCompletion:(void (^)())completion{
-    if([NSString isNullOrEmpty:warningMessage]){
-        return;
-    }
+//    if([NSString isNullOrEmpty:warningMessage]){
+//        return;
+//    }
     JHView *_warningView = [self warningView];
     if (_warningView == nil) {
         _warningView = [self createWarningView:warningMessage];

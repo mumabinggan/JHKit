@@ -12,7 +12,9 @@
 @implementation UILabel (JHKit)
 
 - (void)setPartString:(NSString *)str  attributes:(NSDictionary *)attrs{
-    
+    if ([NSString isNullOrEmpty:str]) {
+        return;
+    }
     //NSRange range = [self.text rangeOfString:str];
     NSMutableAttributedString *attributedString =[[NSMutableAttributedString alloc] initWithAttributedString:self.attributedText];
     if (attributedString == nil) {

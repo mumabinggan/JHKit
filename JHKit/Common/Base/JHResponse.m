@@ -14,4 +14,8 @@
     return _code == 1;
 }
 
+- (BOOL)reLogin {
+    return _code == -1;
+}
+
 @end

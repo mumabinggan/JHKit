@@ -19,4 +19,6 @@
 
 @property (nonatomic, strong, readonly) id responseObject;
 
+@property (nonatomic, assign, readonly) BOOL reLogin;
+
 @end

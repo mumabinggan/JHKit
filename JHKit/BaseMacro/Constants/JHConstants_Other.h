@@ -11,4 +11,7 @@
 
 #define WeakSelf __weak typeof(self) weakSelf = self;
 
+//Notification
+static NSString *kNotificationReLoginRequired = @"kNotificationReLoginRequired";
+
 #endif /* JHConstants_Other_h */

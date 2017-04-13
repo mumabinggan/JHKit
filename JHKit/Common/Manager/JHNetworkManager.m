@@ -80,6 +80,10 @@ static JHNetworkManager *_sharedInstance = nil;
         if (success) {
             NSError *error = nil;
             JHResponse *response = [[clazz alloc] initWithData:responseObject error:&error];
+            if (response.reLogin) {
+                [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationReLoginRequired object:nil];
+                return;
+            }
             if (!response) {
                 NSString *sss = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
                 NSLog(@"----response = %@---", sss);
@@ -170,6 +174,10 @@ static JHNetworkManager *_sharedInstance = nil;
             // 请求成功
             NSLog(@"Request success with responseObject - /n '%@'", responseObject);
             JHResponse *response = [[clazz alloc] initWithDictionary:responseObject error:nil];
+            if (response.reLogin) {
+                [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationReLoginRequired object:nil];
+                return;
+            }
             if (response && request.enableResponseObject) {
                 [response setValue:responseObject forKey:@"responseObject"];
             }

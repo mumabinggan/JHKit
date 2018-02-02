@@ -8,7 +8,7 @@
 
 #import "NSArray+JHKit.h"
 
-@implementation NSArray (Utilities)
+@implementation NSArray (JHUtilities)
 
 - (NSString *)join:(NSString *)string {
     return [self componentsJoinedByString:string];

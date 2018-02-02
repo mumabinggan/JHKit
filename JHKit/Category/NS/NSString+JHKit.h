@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface NSString (Utilities)
+@interface NSString (JHUtilities)
 
 - (BOOL)contains:(NSString*)string;
 

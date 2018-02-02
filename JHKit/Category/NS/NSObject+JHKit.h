@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSObject (Function)
+@interface NSObject (JHFunction)
 
 //- (id)performSelector:(SEL)aSelector withObjects:(NSArray*)objects;
 

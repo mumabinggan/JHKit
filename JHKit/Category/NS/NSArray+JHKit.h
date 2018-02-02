@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSArray (Utilities)
+@interface NSArray (JHUtilities)
 
 - (NSString *)join:(NSString *)string;
 

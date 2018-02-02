@@ -13,7 +13,7 @@
 @class JHResponse;
 @class JHSoapRequest;
 
-@interface UIViewController (UIAssistants)
+@interface UIViewController (JHAssistants)
 
 - (void) showWarningMessage:(NSString *)warningMessage;
 
@@ -78,7 +78,7 @@
 
 @end
 
-@interface UIViewController (Network)
+@interface UIViewController (JHNetwork)
 
 - (void)get:(JHRequest *)request forResponseClass:(Class)clazz
     success:(void (^)(JHResponse *response))success
@@ -100,7 +100,7 @@
 
 @end
 
-@interface UIViewController (SoapNetwork)
+@interface UIViewController (JHSoapNetwork)
 
 - (void)postSoap:(JHSoapRequest *)request forResponseClass:(Class)clazz
          success:(void (^)(JHResponse *))success

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "JHMacro.h"
 
-@interface UIImage (RoundCorner)
+@interface UIImage (JHRoundCorner)
 
 + (UIImage *)imageWithRect:(CGRect)frame
              roundedCorner:(JHRadius)radius
@@ -19,13 +19,13 @@
 
 @end
 
-@interface UIImage (TintColor)
+@interface UIImage (JHTintColor)
 
 - (UIImage *)tintedImageWithColor:(UIColor *)tintColor;
 
 @end
 
-@interface UIImage (Size)
+@interface UIImage (JHSize)
 
 - (float)width;
 

@@ -8,7 +8,7 @@
 
 #import "NSObject+JHKit.h"
 
-@implementation NSObject (Function)
+@implementation NSObject (JHFunction)
 
 - (id)performSelector:(SEL)aSelector withObjects:firstObject, ... {
     id eachObject;

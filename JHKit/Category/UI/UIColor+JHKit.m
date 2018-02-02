@@ -8,7 +8,7 @@
 
 #import "UIColor+JHKit.h"
 
-@implementation UIColor (RGB)
+@implementation UIColor (JHRGB)
 
 - (CGFloat)redFloat {
     const CGFloat *rgba = CGColorGetComponents(self.CGColor);

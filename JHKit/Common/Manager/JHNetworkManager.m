@@ -11,7 +11,6 @@
 #import "JHResponse.h"
 #import "NSString+JHKit.h"
 #import "UIKit+AFNetworking.h"
-#import "GDataXMLNode.h"
 #import "JHXMLParserManager.h"
 
 @interface JHNetworkManager ()

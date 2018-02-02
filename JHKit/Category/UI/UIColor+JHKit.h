@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIColor (RGB)
+@interface UIColor (JHRGB)
 
 - (CGFloat)redFloat;
 

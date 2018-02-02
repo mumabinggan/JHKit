@@ -136,8 +136,6 @@
 		BEB2D9651DFBF2AA00F2E74B /* JHScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB2D9631DFBF2AA00F2E74B /* JHScrollView.h */; };
 		BEB2D9661DFBF2AA00F2E74B /* JHScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB2D9641DFBF2AA00F2E74B /* JHScrollView.m */; };
 		BED1D8D81E4192C300B9AE82 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BED1D8D71E4192C300B9AE82 /* libxml2.tbd */; };
-		BED1D9461E41955700B9AE82 /* GDataXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = BED1D9441E41955700B9AE82 /* GDataXMLNode.h */; };
-		BED1D9471E41955700B9AE82 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BED1D9451E41955700B9AE82 /* GDataXMLNode.m */; };
 		BED1D9691E419BE000B9AE82 /* JHXMLParserManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BED1D9671E419BE000B9AE82 /* JHXMLParserManager.h */; };
 		BED1D96A1E419BE000B9AE82 /* JHXMLParserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BED1D9681E419BE000B9AE82 /* JHXMLParserManager.m */; };
 		BEF6852A1E31B6A0003B745B /* JHCacheManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF685281E31B6A0003B745B /* JHCacheManager.h */; };
@@ -466,8 +464,6 @@
 		BEB2D9641DFBF2AA00F2E74B /* JHScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHScrollView.m; sourceTree = "<group>"; };
 		BEB8D0BE1E470B4000BB9BA3 /* JHManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHManager.h; sourceTree = "<group>"; };
 		BED1D8D71E4192C300B9AE82 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
-		BED1D9441E41955700B9AE82 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDataXMLNode.h; path = Pod/Classes/GDataXMLNode.h; sourceTree = "<group>"; };
-		BED1D9451E41955700B9AE82 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GDataXMLNode.m; path = Pod/Classes/GDataXMLNode.m; sourceTree = "<group>"; };
 		BED1D9671E419BE000B9AE82 /* JHXMLParserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHXMLParserManager.h; sourceTree = "<group>"; };
 		BED1D9681E419BE000B9AE82 /* JHXMLParserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHXMLParserManager.m; sourceTree = "<group>"; };
 		BEF685281E31B6A0003B745B /* JHCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCacheManager.h; sourceTree = "<group>"; };
@@ -750,7 +746,6 @@
 			isa = PBXGroup;
 			children = (
 				BEFD5F1A1E8D4AB3008F067E /* JSONModel.xcodeproj */,
-				BED1D9021E41954800B9AE82 /* GDataXML_HTML */,
 				BE62E4E11DF95EF1004510A5 /* SDVersion */,
 				BE62E17A1DF90F14004510A5 /* AFNetworking.xcodeproj */,
 				BE62E1651DF90F0D004510A5 /* fmdb.xcodeproj */,
@@ -898,15 +893,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BED1D9021E41954800B9AE82 /* GDataXML_HTML */ = {
-			isa = PBXGroup;
-			children = (
-				BED1D9441E41955700B9AE82 /* GDataXMLNode.h */,
-				BED1D9451E41955700B9AE82 /* GDataXMLNode.m */,
-			);
-			path = GDataXML_HTML;
-			sourceTree = "<group>";
-		};
 		BEFD5F1B1E8D4AB3008F067E /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -959,7 +945,6 @@
 				BE83BAFD1E23DECB002F3BCC /* JHCollectionViewLayout.h in Headers */,
 				BED1D9691E419BE000B9AE82 /* JHXMLParserManager.h in Headers */,
 				BE62D66B1DF8DD78004510A5 /* JHLabel.h in Headers */,
-				BED1D9461E41955700B9AE82 /* GDataXMLNode.h in Headers */,
 				BE62E5A91DF95F09004510A5 /* SDVersion.h in Headers */,
 				BE62D69A1DF8DD78004510A5 /* JHConstants_Notification.h in Headers */,
 				BEF6852A1E31B6A0003B745B /* JHCacheManager.h in Headers */,
@@ -1346,7 +1331,6 @@
 				BE62D64E1DF8DD78004510A5 /* JHRequest.m in Sources */,
 				BEF6852B1E31B6A0003B745B /* JHCacheManager.m in Sources */,
 				BE62E5AB1DF95F09004510A5 /* SDiOSVersion.m in Sources */,
-				BED1D9471E41955700B9AE82 /* GDataXMLNode.m in Sources */,
 				BE62D66C1DF8DD78004510A5 /* JHLabel.m in Sources */,
 				BE62E1C01DF912AC004510A5 /* TWRefreshIndicatorView.m in Sources */,
 				BE62D6581DF8DD78004510A5 /* JHContact.m in Sources */,

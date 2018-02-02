@@ -12,7 +12,7 @@
 
 #define kMaxEmailLength 64
 
-@implementation NSString (Utilities)
+@implementation NSString (JHUtilities)
 
 - (BOOL)contains:(NSString*)string {
     return [self rangeOfString:string].location != NSNotFound;

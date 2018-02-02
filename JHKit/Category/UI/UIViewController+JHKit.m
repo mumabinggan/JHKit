@@ -19,7 +19,7 @@ static NSString *LoadingViewKey = nil;
 
 static NSString *RetryViewKey = nil;
 
-@implementation UIViewController (UIAssistants)
+@implementation UIViewController (JHAssistants)
 
 - (JHView *)warningView {
     return objc_getAssociatedObject(self, @"TWWarningView");
@@ -255,7 +255,7 @@ static NSString *RetryViewKey = nil;
 
 @end
 
-@implementation UIViewController (Network)
+@implementation UIViewController (JHNetwork)
 
 - (void)get:(JHRequest *)request forResponseClass:(Class)clazz success:(void (^)(JHResponse *))success failure:(void (^)(NSError *))failure {
     [self get:request forResponseClass:clazz progress:nil success:success failure:failure];
@@ -332,7 +332,7 @@ static NSString *RetryViewKey = nil;
 
 @end
 
-@implementation UIViewController (SOAPNetwork)
+@implementation UIViewController (JHSOAPNetwork)
 
 - (void)postSoap:(JHSoapRequest *)request forResponseClass:(Class)clazz success:(void (^)(JHResponse *))success failure:(void (^)(NSError *))failure {
     [self postSoap:request forResponseClass:clazz progress:nil success:success failure:failure];

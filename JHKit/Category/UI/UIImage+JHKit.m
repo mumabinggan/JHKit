@@ -8,7 +8,7 @@
 
 #import "UIImage+JHKit.h"
 
-@implementation UIImage (RoundCorner)
+@implementation UIImage (JHRoundCorner)
 
 + (UIImage *)imageWithRect:(CGRect)frame
              roundedCorner:(JHRadius)radius
@@ -51,7 +51,7 @@
 
 @end
 
-@implementation UIImage (TintColor)
+@implementation UIImage (JHTintColor)
 
 - (UIImage *)tintedImageWithColor:(UIColor *)tintColor {
     UIGraphicsBeginImageContextWithOptions(self.size, NO, [[UIScreen mainScreen] scale]);
@@ -78,7 +78,7 @@
 
 @end
 
-@implementation UIImage (Size)
+@implementation UIImage (JHSize)
 
 - (float)width {
     return self.size.width;

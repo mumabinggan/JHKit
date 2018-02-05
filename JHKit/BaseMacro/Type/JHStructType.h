@@ -27,6 +27,17 @@ JHRadiusMake(CGFloat lt, CGFloat lb, CGFloat rt, CGFloat rb)
     radius.rtRadius = rt;
     radius.rbRadius = rb;
     return radius;
+};
+
+CG_INLINE JHRadius
+JHRadiusMakeRadius(CGFloat r)
+{
+    JHRadius radius;
+    radius.ltRadius = r;
+    radius.lbRadius = r;
+    radius.rtRadius = r;
+    radius.rbRadius = r;
+    return radius;
 }
 
 #endif /* JHStructType_h */

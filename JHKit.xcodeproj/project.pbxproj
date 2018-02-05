@@ -138,6 +138,7 @@
 		BED1D8D81E4192C300B9AE82 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BED1D8D71E4192C300B9AE82 /* libxml2.tbd */; };
 		BED1D9691E419BE000B9AE82 /* JHXMLParserManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BED1D9671E419BE000B9AE82 /* JHXMLParserManager.h */; };
 		BED1D96A1E419BE000B9AE82 /* JHXMLParserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BED1D9681E419BE000B9AE82 /* JHXMLParserManager.m */; };
+		BEE93B8E2027FCC800B0C85B /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE93B832027FBC100B0C85B /* Masonry.framework */; };
 		BEF6852A1E31B6A0003B745B /* JHCacheManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF685281E31B6A0003B745B /* JHCacheManager.h */; };
 		BEF6852B1E31B6A0003B745B /* JHCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF685291E31B6A0003B745B /* JHCacheManager.m */; };
 		BEF685461E31B972003B745B /* JHAnimatedImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF685441E31B972003B745B /* JHAnimatedImageView.h */; };
@@ -320,6 +321,20 @@
 			remoteGlobalIDString = 2987B0AE1BC408A200179A4C;
 			remoteInfo = "AFNetworking tvOS Tests";
 		};
+		BEE93B822027FBC100B0C85B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEE93B6D2027FBC000B0C85B /* Masonry.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3AED05B71AD59FD40053CC65;
+			remoteInfo = "Masonry iOS";
+		};
+		BEE93B842027FBC100B0C85B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEE93B6D2027FBC000B0C85B /* Masonry.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3AED06271AD5A1400053CC65;
+			remoteInfo = "Masonry OSX";
+		};
 		BEFD5F1E1E8D4AB3008F067E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BEFD5F1A1E8D4AB3008F067E /* JSONModel.xcodeproj */;
@@ -466,6 +481,7 @@
 		BED1D8D71E4192C300B9AE82 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		BED1D9671E419BE000B9AE82 /* JHXMLParserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHXMLParserManager.h; sourceTree = "<group>"; };
 		BED1D9681E419BE000B9AE82 /* JHXMLParserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHXMLParserManager.m; sourceTree = "<group>"; };
+		BEE93B6D2027FBC000B0C85B /* Masonry.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Masonry.xcodeproj; path = Masonry/Masonry.xcodeproj; sourceTree = "<group>"; };
 		BEF685281E31B6A0003B745B /* JHCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCacheManager.h; sourceTree = "<group>"; };
 		BEF685291E31B6A0003B745B /* JHCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHCacheManager.m; sourceTree = "<group>"; };
 		BEF685441E31B972003B745B /* JHAnimatedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHAnimatedImageView.h; sourceTree = "<group>"; };
@@ -484,6 +500,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEE93B8E2027FCC800B0C85B /* Masonry.framework in Frameworks */,
 				BEFD5F201E8D4AEB008F067E /* JSONModel.framework in Frameworks */,
 				BED1D8D81E4192C300B9AE82 /* libxml2.tbd in Frameworks */,
 				BE62E1971DF90F44004510A5 /* SDWebImage.framework in Frameworks */,
@@ -745,6 +762,7 @@
 		BE62DA201DF90ED3004510A5 /* Submodules */ = {
 			isa = PBXGroup;
 			children = (
+				BEE93B6D2027FBC000B0C85B /* Masonry.xcodeproj */,
 				BEFD5F1A1E8D4AB3008F067E /* JSONModel.xcodeproj */,
 				BE62E4E11DF95EF1004510A5 /* SDVersion */,
 				BE62E17A1DF90F14004510A5 /* AFNetworking.xcodeproj */,
@@ -891,6 +909,15 @@
 				BED1D8D71E4192C300B9AE82 /* libxml2.tbd */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEE93B6E2027FBC000B0C85B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEE93B832027FBC100B0C85B /* Masonry.framework */,
+				BEE93B852027FBC100B0C85B /* Masonry.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		BEFD5F1B1E8D4AB3008F067E /* Products */ = {
@@ -1079,6 +1106,10 @@
 					ProjectRef = BEFD5F1A1E8D4AB3008F067E /* JSONModel.xcodeproj */;
 				},
 				{
+					ProductGroup = BEE93B6E2027FBC000B0C85B /* Products */;
+					ProjectRef = BEE93B6D2027FBC000B0C85B /* Masonry.xcodeproj */;
+				},
+				{
 					ProductGroup = BE62E14E1DF90EF3004510A5 /* Products */;
 					ProjectRef = BE62E14D1DF90EF3004510A5 /* MBProgressHUD.xcodeproj */;
 				},
@@ -1255,6 +1286,20 @@
 			fileType = wrapper.cfbundle;
 			path = "AFNetworking tvOS Tests.xctest";
 			remoteRef = BE62E1901DF90F14004510A5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BEE93B832027FBC100B0C85B /* Masonry.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Masonry.framework;
+			remoteRef = BEE93B822027FBC100B0C85B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BEE93B852027FBC100B0C85B /* Masonry.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Masonry.framework;
+			remoteRef = BEE93B842027FBC100B0C85B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		BEFD5F1F1E8D4AB3008F067E /* JSONModel.framework */ = {
@@ -1480,7 +1525,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.starfacealliance.JHKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Submodules/JsonModel/** $(PROJECT_DIR)/Submodules/SDWebImage/** $(PROJECT_DIR)/Submodules/MBProgressHUD/** $(PROJECT_DIR)/Submodules/IQKeyboardManager/** $(PROJECT_DIR)/Submodules/FMDB/** $(PROJECT_DIR)/Submodules/AFNetworking/** $(PROJECT_DIR)/Submodules/GDataXML_HTML/**";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Submodules/JsonModel/** $(PROJECT_DIR)/Submodules/SDWebImage/** $(PROJECT_DIR)/Submodules/MBProgressHUD/** $(PROJECT_DIR)/Submodules/IQKeyboardManager/** $(PROJECT_DIR)/Submodules/FMDB/** $(PROJECT_DIR)/Submodules/AFNetworking/** $(PROJECT_DIR)/Submodules/Masonry/**";
 			};
 			name = Debug;
 		};
@@ -1503,7 +1548,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.starfacealliance.JHKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Submodules/JsonModel/** $(PROJECT_DIR)/Submodules/SDWebImage/** $(PROJECT_DIR)/Submodules/MBProgressHUD/** $(PROJECT_DIR)/Submodules/IQKeyboardManager/** $(PROJECT_DIR)/Submodules/FMDB/** $(PROJECT_DIR)/Submodules/AFNetworking/** $(PROJECT_DIR)/Submodules/GDataXML_HTML/**";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Submodules/JsonModel/** $(PROJECT_DIR)/Submodules/SDWebImage/** $(PROJECT_DIR)/Submodules/MBProgressHUD/** $(PROJECT_DIR)/Submodules/IQKeyboardManager/** $(PROJECT_DIR)/Submodules/FMDB/** $(PROJECT_DIR)/Submodules/AFNetworking/** $(PROJECT_DIR)/Submodules/Masonry/**";
 			};
 			name = Release;
 		};

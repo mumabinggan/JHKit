@@ -19,3 +19,6 @@
 [submodule "Submodules/SDVersion"]
 	path = Submodules/SDVersion
 	url = https://github.com/mumabinggan/SDVersion.git
+[submodule "Submodules/Masonry"]
+	path = Submodules/Masonry
+	url = https://github.com/mumabinggan/Masonry.git

@@ -14,6 +14,10 @@
 #import "JHWidgets.h"
 #import "JHManager.h"
 #import "Masonry.h"
+
+#define MAS_SHORTHAND
+#define MAS_SHORTHAND_GLOBALS
+
 //! Project version number for JHKit.
 FOUNDATION_EXPORT double JHKitVersionNumber;
 
